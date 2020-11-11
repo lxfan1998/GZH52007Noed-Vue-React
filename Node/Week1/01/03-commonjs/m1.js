@@ -19,3 +19,6 @@ class Person{
         console.log(this.name+',say hi!');
     }
 }
+
+// 暴露
+exports.name=name;
