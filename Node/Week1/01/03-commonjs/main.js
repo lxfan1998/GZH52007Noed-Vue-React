@@ -9,4 +9,18 @@
 const m1=require('./m1');
 // 要注意：子啊浏览器中，写在hmtl文件的src路径中的'./m1.js'和'm1.js'是等价的，但是在js文件中这两者是不等价的
 console.log('m1',m1);
-console.log(name);
+
+// 使用：一般类直接使用就可以，前缀有点奇怪，约定俗成是不加前缀的
+// new Person('andy');
+// 如果某个模块只是暴露单个类，一般我们直接暴露该类即可
+// const p1=new m1.Person('andy');
+const p1=new Person('andy');
+console.log(p1.name);  // andy
+console.log(p1);  // Person { name: 'andy' }
+
+// 如果要使用模块里面的成员，则使用：模块名称.模块的成员
+// console.log(m1.name);
+// console.log(m1.number);
+// console.log(m1.age);
+// console.log(m1.add);
+// console.log(m1.add(12,24));
