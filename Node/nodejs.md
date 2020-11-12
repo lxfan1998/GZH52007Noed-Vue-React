@@ -123,6 +123,46 @@ npm是一个包管理器，可以帮开发者管理JavaScript的第三方的代�
 + npm uninstall pacageName  卸载一个包
 + npm update pacageName  更新一个包
 
+# npm使用的注意事项
+早先使用的npm进行包管理的时候，下载是很慢的
++ 用户网速慢
++ npm管理的包的服务器是国外（npmjs.org）
+-切源（把npm的下载服务器转换到国内）（比较好用的是淘宝）
+```shell
+npm config set registry http://registry.npm.taobao.org
+```
+
+- 使用淘宝提供的一个cnpm的命令来替代npm（这个命令只需要执行一次）
+```shell
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+注意：-g是global的简写，代表是全局安装，一般这种安装后，会提供一个执行的命令，一般这个都是一个工具，辅助开发者做一些事情，这个命令是可以在任意窗口下执行的。
+
+建议：尽量不要使用cnpm，一般做切源操作即可（用cnpm可能会出现一些错误）。
+
+- 使用一个更加先进的包管理器：yarn。yarn是Facebook出的一个新的包管理器，旨在取代npm。
+
++ npm软件的设计有一定的缺陷
+
+# yarn的基本使用
+> yarn是Facebook出的一个新的包管理器，旨在取代npm。
+
++ yarn init -y  初始化操作
++ yarn add package  安装一个包
++ yarn remove package  卸载一个包
++ yarn upgrade package  升级一个包
++ yarn global add package  安装一个工具包
+
+注意：后期大部分的时间我们使用的yarn包管理器，现在使用npm管理的包，全部都可以使用yarn管理，只是习惯使用yarn，yarn更加好用，后起之秀。
+
+npm和yarn早期都是为了管理后端开发的包。但是由于太好用，npm和yarn也可以管理前端的包，例如jQuery、bootstrap。
+但是也有专门管理前端的包管理器
+- bower
+
+
+# 注意事项
+如果使用`npm install -g package`或者`yarn global add package`安装全局包的时候，需要使用的超级管理员的身份启动黑窗口（搜索cmd命令行-->右键-->以管理员身份运行）。
+
 （Week1 Day2下午）
 
 # 2.express学习
