@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-require('');
+const md5=require('md5');
 
 const UsersModel=mongoose.model('User',{username:String,password:String},'users');
 
@@ -26,7 +26,7 @@ class MovieModel{
                     // 用户名存在
                     if(data.password===password){
                         // 面膜正确，比对得上
-                        
+
                     }
                 }
             }

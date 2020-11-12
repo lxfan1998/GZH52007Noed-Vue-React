@@ -85,12 +85,59 @@ TODO：
 2.百度查别人的代码，自己改（低效）
 3.专门的网站提供一些做好的代码
 
+## npm包管理器
++ 安装
++ 卸载
++ pacage.json文件的含义
++ 全局包和局部包的区别
++ yarn包管理器
++ bower包管理器
 
-# Week1 Day2
-## 下午
+
+（Week1 Day2上午）
+
+# 课程目标
+1.npm包管理器
+2.express学习
+3.mongodb学习
+
+# npm包管理器
+```shell
+npm install monent
+
+```
+npm是一个包管理器，可以帮开发者管理JavaScript的第三方的代码文件。
+
+网址：npmjs.org
+
++ 单个文件我们叫做模块（CommonJS）
++ 多个模块一般我们称之为包（package）（更加快速方便地组织代码）
+
+# npm的使用
+> npm软件随着nodejs安装自带的。
+
++ npm init -y  初始化一个包，生成一个pacage.json文件，该文件用于记录项目开发中地信息（1.项目的名称  2.项目的描述  3.项目地开发者信息，联系邮箱，仓库地址  4.项目开发中依赖地其他的包），一般我们将该文件成为项目的身份证。这个命令执行一次即可。（-y并不是必须的，如果不加-y，会有交互式的命令让我们选择）
+
++ npm install pacageName  安装一个包
+    - npm i packageName  简写
++ npm uninstall pacageName  卸载一个包
++ npm update pacageName  更新一个包
+
+（Week1 Day2下午）
+
 # 2.express学习
 > express是一个底层使用http模块，封装的一个web库，可以快速地让开发者构建自己地web项目。
 
 同类型的产品有：
 + koa（也是express的原班人马进行开发）使用ES6、ES7高级特性进行编写，写出来的代码更加优雅简洁。
 + eggjs（阿里开发出来的一款专注于做大型web项目的库，它的开发思想完全遵循后端的MVC(MVVM)）。
+
+
+（Week1Day4下午）
+
+# 
+md5加密不算加密，它具有单项不可逆性，只能由明文变成密文，对于相同的明文生成的密文一致。
+md5叫做获取信息的摘要值（hash值，指纹信息）。
+
+# 
+
