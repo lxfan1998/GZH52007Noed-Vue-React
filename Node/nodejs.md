@@ -163,6 +163,22 @@ npm和yarn早期都是为了管理后端开发的包。但是由于太好用，n
 # 注意事项
 如果使用`npm install -g package`或者`yarn global add package`安装全局包的时候，需要使用的超级管理员的身份启动黑窗口（搜索cmd命令行-->右键-->以管理员身份运行）。
 
+# npm协同开发
+用yarn安装依赖会比npm快很多，尤其是需要安装很多依赖的时候。
+
+package.json里面的script可以写多条命令，根据使用需求添加命令。
+script里面是key值后面跟命令和脚本文件，使用`npm run key值`来运行脚本文件。
+```shell
+    "scripts": {
+        "start": "node app.js",
+        "dev": "node dev.js",
+        "test": "node test.js",
+        "abc": "node abc.js"
+    },
+```
+
+拿到文件后，第一步先用yarn安装依赖，第二部去看package.json的script，查看咱们启动文件。
+
 （Week1 Day2下午）
 
 # 2.express学习
@@ -181,3 +197,40 @@ md5叫做获取信息的摘要值（hash值，指纹信息）。
 
 # 
 
+（Week1Day5上午）
+
+# 课程目标
+1.电影网站完善
+2.jwt的基本使用
+3.
+
+# 1.电影网站完善
+1.注册
+2.登录
+3.评论列表
+4.评论添加
+
+# 思考
+b/s
+
+客户端和服务端通信方式有哪些？
++ ajax
+    + cors
++ jsonp
+
++ iframe
+
++ flash（actionJavaScript）
+
+# 接口文档
+
+# apidoc工具
+使用该工具我们有在编写代码的时候，为代码增加注释，然后基于该注释可以
+运行apidoc之前得先有一个配置文件
+
+（Week1day5）
+
+# websocket简介
+webdocker
+
+# websocker服务器
