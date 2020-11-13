@@ -83,7 +83,16 @@ TODO：
 ## 实现思路
 1.自己写（低效）
 2.百度查别人的代码，自己改（低效）
-3.专门的网站提供一些做好的代码
+3.专门的网站提供一些做好的代码、
+
+```shell
+    // 时间格式化 Date
+    var moment=require('moment');
+    // 1.没有目录，排除是用户自己写的模块
+    // 2.尝试当成核心模块，但是核心模块不存在http://nodejs.cn/api/
+    // 3.认为是npm管理的包（node_modules/packageName）-->package.json-->main字段（./moment.js）
+    console.log(moment().format());
+```
 
 ## npm包管理器
 + 安装
@@ -179,14 +188,63 @@ script里面是key值后面跟命令和脚本文件，使用`npm run key值`来�
 
 拿到文件后，第一步先用yarn安装依赖，第二部去看package.json的script，查看咱们启动文件。
 
+# yarn协同开发
+运行脚本文件时不用加run，直接用`yarn key值`。
+
+# http核心模块
+nodejs的核心模块http。
+
+# browsersync
+Browsersync能让浏览器实时、快速响应文件更改（html、js、css、sass、less等）并自动刷新页面。
+## 安装browsersync
+```shell
+    npm install -g browser-sync
+```
+
+## 使用browsersync
+网址：http://www.browsersync.cn/
+
+### 静态网站
+1.如果您想要监听.css文件, 您需要使用服务器模式。 BrowserSync 将启动一个小型服务器，并提供一个URL来查看您的网站。
+--files 路径是相对于运行该命令的项目（目录） 
+```shell
+    browser-sync start --server --files "css/*.css"
+```
+
+2.如果您需要监听多个类型的文件，您只需要用逗号隔开。例如我们再加入一个.html文件
+--files 路径是相对于运行该命令的项目（目录） 
+```shell
+    browser-sync start --server --files "css/*.css, *.html"
+```
+3.如果你的文件层级比较深，您可以考虑使用 **（表示任意目录）匹配，任意目录下任意.css 或 .html文件。 
+```shell
+    browser-sync start --server --files "**/*.css, **/*.html"
+```
+
+### 动态网站
+1.如果您已经有其他本地服务器环境PHP或类似的，您需要使用代理模式。 BrowserSync将通过代理URL(localhost:3000)来查看您的网站。
+主机名可以是ip或域名
+```shell
+    browser-sync start --proxy "主机名" "css/*.css"
+```
+
+2.在本地创建了一个PHP服务器环境，并通过绑定Browsersync.cn来访问本地服务器，使用以下命令方式，Browsersync将提供一个新的地址localhost:3000来访问Browsersync.cn，并监听其css目录下的所有css文件。
+```shell
+    browser-sync start --proxy "Browsersync.cn" "css/*.css"
+```
+
+（尝试了但是没成功）
+
 （Week1 Day2下午）
 
 # 2.express学习
-> express是一个底层使用http模块，封装的一个web库，可以快速地让开发者构建自己地web项目。
+> express是一个底层使用http模块，封装的一个web库，可以快速地让开发者构建自己的web项目。
 
 同类型的产品有：
 + koa（也是express的原班人马进行开发）使用ES6、ES7高级特性进行编写，写出来的代码更加优雅简洁。
-+ eggjs（阿里开发出来的一款专注于做大型web项目的库，它的开发思想完全遵循后端的MVC(MVVM)）。
++ eggjs（阿里开发出来的一款专注于做大型web项目的库，它的开发思想完全遵循后端的MVC(MVC还有一个变种MVVM)的开发思想）。
+
+# 3.mongodb学习
 
 
 （Week1Day4下午）
