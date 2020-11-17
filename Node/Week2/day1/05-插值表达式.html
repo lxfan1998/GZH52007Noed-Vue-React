@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h2>插值表达式里面可以写什么</h2>
+        <h3>字面量</h3>
+        <p>{{ '字符串，字面量' }}</p>
+        <p>{{ 12 }}</p>
+        <p>{{ true }}</p>
+        <p>{{ 1+1 }}</p>
+        <p>{{ 12*12 }}</p>
+        <p>{{ [12,34,56,78] }}</p>
+        <p>{{ [12,23,34,45][0] }}</p>
+        <p>{{ {id:1,username:'andy'} }}</p>
+        <p>{{ {id:1,username:'andy'}.username }}</p>
+        <hr>
+        <h3>变量</h3>
+        <p>{{ title }}</p>
+        <p>{{ arr }}</p>
+        <p>{{ info }}</p>
+        <p>{{ arrs }}</p>
+        <h3>条件表达式</h3>
+        <p>{{ 10 > 2 ? '真的' : '假的' }}</p>
+        <p>{{ number1 > number2 ? '真的' : '假的' }}</p>
+        <h4>逻辑运算</h4>
+        <p>{{ true && false }}</p>
+        <p>{{ isBoolean1 || isBoolean2 }}</p>
+        <p>{{ !isBoolean2 }}</p>
+        <h4>ECMA函数</h4>
+        <p>{{ Math.random() }}</p>
+        <p>{{ parseInt(12.23) }}</p>
+        <!-- 除了自己在全局定义的函数不可以使用，基本上之前的js语法都是可以的 -->
+        <p>自己定义的函数：{{ fn() }}：错误</p>
+        <!-- 如果确实需要定义函数，则需要在vuejs实例化对象的时候，在methods里面定义 -->
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+    function fn(){
+        console.log('fn call...');
+    }
+
+    var vm=new Vue({
+        el:'#app',
+        methods:{
+            fn() {
+                console.log('vue methods fn');
+            }
+        },
+        data:{
+            title:'hi vuejs',
+            number1: 12,
+            number2:23,
+            isBoolean1:false,
+            isBoolean2:true,
+            username:'',
+            arr:[12,23,34],
+            info:{id:1,username:'mark'},
+            arrs:[
+                {id:1,username:'mark'},
+                {id:1,username:'andy'}
+            ]
+        }
+    })
+
+    console.log(vm);
+</script>
+</html>

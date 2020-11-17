@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 求输出结果
+    // var func=(function(a){  // 这个a是3
+    //     this.a=a;
+    //     return function(a){  // 这个a是7
+    //         a+=this.a;
+    //         return a;
+    //     }
+    // })(function(a,b){
+    //     return a;
+    // }(3,5));
+    // console.log(func(7));  // 结果：10
+
+    // 求输出结果
+    // async function async1(){
+    //     console.log('async1 start');
+    //     await async2();
+    //     console.log('async1 end');
+    // }
+    // async function async2(){
+    //     console.log('async2');
+    // }
+    // console.log('script start');
+    // setTimeout(function(){
+    //     console.log('setTimeout');
+    // },0)
+    // async1();
+    // new Promise(function(resolve){
+    //     console.log('promise1');
+    //     resolve();
+    // }).then(function(){
+    //     console.log('promise2');
+    // })
+    // console.log('script end');
+
+
+    // 用reduce实现数组arr = [3,4,8,0,9]的求和
+    // var arr = [3,4,8,0,9]; 
+    // Array.prototype.sum = function (){ 
+    //     var sumResult = 0; 
+    //     return this.reduce(function (preValue, curValue) {
+    //         return sumResult = preValue + curValue; 
+    //     });
+    //     return sumResult;
+    // } 
+    // console.log(arr.sum());
+
+    
+
+    // 求输出结果
+    // var toString=Object.prototype.toString;
+
+    // console.log(toString.call('str'));
+    // console.log(toString.call([]));
+    // console.log(toString.call(function(){}));
+    // console.log(toString.call({}));
+    // console.log(toString.callundefined);
+    // console.log(toString.callnull);
+
+    // es5的解构赋值写法
+    // const {a:'a',b,c:ccc}={a:'aa',b''bb',c:'cc'};
+    // const {a='a',b,c:ccc}={a:'aa',b:'bb',c:'cc'};
+    // var obj={a:'aa',b:'bb',c:'cc'};
+    // var a=obj.a;
+    // var b=obj.b;
+    // var c=obj.c;
+    // console.log(a,b,c);
+
+
+
+    // console.log(1);
+    // 
+    // setTimeout(function(){
+    //     console.log(2);
+    // })
+    // Promise.resolve().then(function(){
+    //     console.log(3);
+    // })
+    // Promise.resolve().then(function(){
+    //     setTimeout(function(){
+    //         console.log(4);
+    //     })
+    // })
+    // setTimeout(function(){
+    //     Promise.resolve().then(function(){
+    //         console.log(5);
+    //     })
+    // })
+    // new Promise(function(reslve,reject){
+    //     console.log(6);
+    // }).then(function(){
+    //     console.log(7);
+    // })
+    // 1 6 3 2 5 4
+
+
+    // const name='hello';
+    // const obj={
+    //     name:'world',
+    //     getName:function(){
+    //         return this.name;
+    //     }
+    // }
+    // console.log(obj.getName());  // world
+
+    // 输出数组[1,3,4,4,5,5]的元素和元素的重复次数
+    // 实现思路：
+    // 定义一个对象
+    // 使用hasOwnProperty判断对象中是否存在"数组元素"作为属性的值，
+    // 如果存在，则给属性值加1，否则属性值等于1
+    // var arrObject=[1,3,4,4,5,5];
+    // var obj={};
+    // for(let i=0;i<arrObject.length;i++){
+    //     if(obj.hasOwnProperty(arrObject[i])){
+    //         obj[arrObject[i]] +=1;
+    //     }else{
+    //         // obj[arrObject[i]] =1;
+    //     }
+    // }
+    // console.log(obj);
+    
+
+    // 跨域
+    // devServer:{
+    //     port:60000,  // 端口号，如果端口号被占用，会自动提升1
+    //     host:"localhost",  // 主机名，127.0.0.1，真机0.0.0.0
+    //     https:false,  // 协议
+    //     open:true,  // 启动服务时自动打开浏览器访问
+
+    //     // 设置跨域代理
+    //     proxy:{
+    //         // 匹配 /dev-api 开头的请求  （/dev-api可以修改，不固定）
+    //         "/dev-api":{
+    //             // 目标服务器，代理访问到https://localhost:8001
+    //             target:"http://47.112.170.225:60008",
+    //             // 开启代理：在本地会创建一个虚拟服务端，然后发送请求的数据，
+    //             // 并同时接收请求的数据，这样服务器端和服务端进行数据的交互就不会有跨域问题
+    //             changOrigin:true,  // 开启代理
+    //             pathRewrite:{
+    //                 // 会将 /dev-api 替换为 '' ，也就是 /dev-api 会被移除
+    //                 // 如 /dev-api/db,json 代理到 https://localhost:8080/db.json
+    //                 "/dev-api":""
+    //             }
+    //         }
+    //     }
+    // }
+
+    // 从var stars=[{"name":"黄晓明","from":"中国"},{"name":"巨石强森","from":"美国"},{"name":"看不清","feom":"中国"},{"name":"莱昂纳多","from":"美国"},{"name":"卓别林","from":"英国"}]中筛选出一个国籍数组，数组中国籍只能出现一次。例如["中国","美国","英国"]。请写出具体运行代码。
+    // let stars=[
+    //     {
+    //         "name":"黄晓明",
+    //         "from":"中国"
+    //     },
+    //     {
+    //         "name":"巨石强森",
+    //         "from":"美国"
+    //     },
+    //     {
+    //         "name":"看不清",
+    //         "feom":"中国"
+    //     },
+    //     {
+    //         "name":"莱昂纳多",
+    //         "from":"美国"
+    //     },
+    //     {
+    //         "name":"卓别林",
+    //         "from":"英国"
+    //     }
+    // ];
+    // let obj={};
+    // stars=stars.reduce((prev,item)=>{
+    //     obj[item.from] ? "" : obj[item.from] = true && prev.push(item);
+    //     return prev;
+    // },[]);
+    // console.log(stars);
+
+    // 求打印结果
+    // function hello(){
+    //     console.log(typeof 'hello');
+    //     setTimeout(function(){
+    //         console.log(typeof 3000);
+    //     },1000)
+    //     console.log(typeof true);
+    // }
+    // hello();
+    // string boolean  number
+
+    // 有一个html标签<a>跳转</a>，请写出具体css样式，使a标签最终显示结果长为100px，高为32px，字体颜色为#f3f3f3，背景颜色为#333333，字体大小12px，字上下左右居中，圆角7px。
+
+
+    // 参考数据接口地址：https://www.jvhe.cn
+</script>
+<!-- <style>
+    a{
+        display: block;
+        width: 100px;
+        height: 32px;
+        line-height: 32px;
+        color: #f3f3f3;
+        background-color: #333333;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 7px;
+    }
+</style> -->
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h2>在vuejs里面有v-开头的都叫做指令，可以扩充html能力</h2>
+        <!-- v-model 收集页面的数据，可以使用在表单控件上面（比如input 、text、radio、checkbox、select、textarea） -->
+        <!-- v-model的属性必须事先在模型变量里面定义好 -->
+        <!-- v-model修饰器 trim去除空格 -->
+        <input type="text" v-model.trim="username" />
+        <div>
+            <p>性别：</p>
+            <input type="radio" value="male" v-model="gender" />男
+            <hr>
+            <input type="radio" value="female" v-model="gender" />女
+            <div>
+                <p>兴趣爱好：</p>
+                <input type="checkbox" value="zq" v-model="hobby" />足球
+                <hr>
+                <input type="checkbox" value="lq" v-model="hobby" />篮球
+                <hr>
+                <input type="checkbox" value="ymq" v-model="hobby" />羽毛球
+                <hr>
+            </div>
+            <div>
+                <p>地区：</p>
+                <select v-model="address">
+                    <option value="sh">上海</option>
+                    <option value="gz">广州</option>
+                    <option value="sz">深圳</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+    function fn(){
+        console.log('fn call...');
+    }
+
+    var vm=new Vue({
+        el:'#app',
+        methods:{
+            fn() {
+                console.log('vue methods fn');
+            }
+        },
+        data:{
+            title:'hi vuejs',
+            number1: 12,
+            number2:23,
+
+            isBoolean1:false,
+            isBoolean2:true,
+            // 模型变量的初始化操作
+            username:'',
+
+            gender:'male',
+
+            // 有两种方式来初始化：1.初始化为数组[]
+            hobby:[],
+
+            address:'gz',
+
+            arr:[12,23,34],
+            info:{id:1,username:'mark'},
+            arrs:[
+                {id:1,username:'mark'},
+                {id:1,username:'andy'}
+            ]
+        }
+    })
+
+    console.log(vm);
+</script>
+</html>

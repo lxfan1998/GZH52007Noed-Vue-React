@@ -244,6 +244,9 @@ Browsersync能让浏览器实时、快速响应文件更改（html、js、css、
 + koa（也是express的原班人马进行开发）使用ES6、ES7高级特性进行编写，写出来的代码更加优雅简洁。
 + eggjs（阿里开发出来的一款专注于做大型web项目的库，它的开发思想完全遵循后端的MVC(MVC还有一个变种MVVM)的开发思想）。
 
+## 安装和使用
+安装命令：`npm install express --save`或者`yarn add express`，--save可以省略。
+
 # 3.mongodb学习
 
 
