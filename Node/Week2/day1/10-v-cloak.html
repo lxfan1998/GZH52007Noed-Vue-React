@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        [v-cloak]{
+            diaplay:none;
+        }
+    </style>
 </head>
 <body>
 <!--浏览器在解析html标签，对空格，或者换行默认当成一个空格处理，不会保留原格式-->
-    登鹳雀楼
-        （王之涣）
+登鹳雀楼
+（王之涣）
 白日依山尽，
 黄河入海流。
 欲穷千里目，
@@ -26,6 +31,9 @@
 <div id="app">
     <h2>v-pre</h2>
     <p v-pre>今天很高兴学习了插值表达式{{ title }}</p>
+    <!--不希望页面加载的时候出现 插值表达式转换为实际数据的过程 ，一般称之为页面闪烁-->
+    <p v-cloak>{{ title }}</p>
+    <p v-cloak>{{ arr }}</p>
 </div>
 </body>
 <script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>

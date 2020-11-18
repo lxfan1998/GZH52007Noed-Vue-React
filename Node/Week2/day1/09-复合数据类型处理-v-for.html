@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
+    <h2>对于复合数据类型，希望得到的是某个元素的值或者是某个属性的值，或者做遍历操作</h2>
+    <p>{{ arr }}</p>
+    <p v-text="arr"></p>
+    <hr>
+    <!--插值表达式的js语境-->
+    <p>{{ '下标为0的数据值：'+ arr[0] }}</p>
+    <p>{{ info.username }}</p>
+    <hr>
+    <!--arr遍历输出：1. 便利的数据  2. 遍历的最小单元-->
+    <!--v-for 语法类型：类似于for in语法-->
+    <!--in前面的标识符用户自定义，in后面的代表的是要遍历的模型变量：数组、对象、对象数组-->
+    <!--[{},{}]-->
+    <!--循环多少次取决于数组里面有多少个{}，有多少个{}就遍历多少次-->
+    <!--对象数组也还是数组，所以key也表示下标-->
+    <!--这里的ele和key都是自己定义的标识符-->
+    <ul v-for="(ele,key) in arrs">
+        <li>{{ key }}：序号：{{ ele.id }}</li>
+        <li>用户名：{{ ele.username }}</li>
+    </ul>
+    <hr>
+
+    <ul>
+        <!--key针对数组来说是下标-->
+        <li v-for="(ele,key) in arr">{{ key }}：{{ ele }}</li>
+    </ul>
+
+    <ul>
+        <!--key针对对象来说是属性-->
+        <li v-for="(ele,key) in info">{{ key }}：{{ ele }}</li>
+    </ul>
+</div>
+<script>
+    let title='hi';
+    console.log('标题'+title);
+</script>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+    var vm=new Vue({
+        el:'#app',
+        data:{
+            title:'hi vuejs',
+            arr:[1,2,3,4],
+            info:{id:1,username:'andy'},
+            arrs:[
+                {id:1,username:'andy'},
+                {id:2,username:'mark'}
+            ]
+        }
+    })
+
+    console.log(vm);
+</script>
+</html>
