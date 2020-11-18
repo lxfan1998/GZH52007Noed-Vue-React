@@ -368,3 +368,34 @@ get请求
 
 
 # 3. vuejs实现购物车案例
+
+
+
+
+
+（Week2Day3上午）
+
+# 课程目标
+1. 组件的样式
+
+# 
+
+2.为什么要学习mock
+> 提升开发的效率。
+
+mockjs
+
+Mock.Random是一个工具类，用于生成各种随机数据。
+
+
+# json-server
+
+# 安装json-server
+
+#
+
+
+（Week2Day3下午）
+
+# fetch
+
