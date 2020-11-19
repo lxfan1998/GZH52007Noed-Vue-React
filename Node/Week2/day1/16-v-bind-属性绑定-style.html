@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [v-cloak]{
+            diaplay:none;
+        }
+        .btn{
+            width: 50px;
+            height: 30px;
+            border: 1px solid #000;
+        }
+        .active{
+            background-color: gold;
+        }
+        .btn-danger{
+            color: red;
+        }
+        .un{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--v-bind:style="[style1,style2]"数组方式写多个不生效，只能写一个，如果要写多个，要以对象的方式-->
+    <div v-bind:style="{'width': '200px','height': '300px','font': '400px'}">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, vero.
+    </div>
+    <!--大部分情况下都用v-bind的简写-->
+    <div :style="{'width': '200px','height': '300px','font': '400px'}">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, vero.
+    </div>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+    var vm=new Vue({
+        el:'#app',
+        data:{
+            title:'hi vuejs',
+            logoImg:'https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png',
+            className1:'btn',
+            className2:'btn-danger',
+            style1:'width: 200px;height: 300px;color: red;',
+            style2:'font-size: 40px;',
+            arr:[1,2,3,4],
+            info:{id:1,username:'andy'},
+            arrs:[
+                {id:1,username:'andy'},
+                {id:2,username:'mark'}
+            ]
+        }
+    })
+
+    console.log(vm);
+</script>
+</html>

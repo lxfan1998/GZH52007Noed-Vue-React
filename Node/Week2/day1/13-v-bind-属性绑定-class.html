@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [v-cloak]{
+            diaplay:none;
+        }
+        .btn{
+            width: 50px;
+            height: 30px;
+            border: 1px solid #000;
+        }
+        .btn-danger{
+            color: red;
+        }
+        .un{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--数组方式-->
+    <div class="un" v-bind:class="[className1,className2]">按钮</div>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+    var vm=new Vue({
+        el:'#app',
+        data:{
+            title:'hi vuejs',
+            logoImg:'https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png',
+            className1:'btn',
+            className2:'btn-danger',
+            arr:[1,2,3,4],
+            info:{id:1,username:'andy'},
+            arrs:[
+                {id:1,username:'andy'},
+                {id:2,username:'mark'}
+            ]
+        }
+    })
+
+    console.log(vm);
+</script>
+</html>

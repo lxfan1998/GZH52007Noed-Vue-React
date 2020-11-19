@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [v-cloak]{
+            diaplay:none;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <p>{{ logoImg }}</p>
+    <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" />
+    <hr>
+    <!--v-bind可以实现将模型变量的值绑定到HTML标签的某些属性上面，形成属性的属性值-->
+    <!--v-bind是把模型变量logoImg的值作为属性给绑定给了src-->
+    <img v-bind:src="logoImg" alt="" />
+    <hr>
+    <!--简写-->
+    <img :src="logoImg" alt="" />
+</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+    var vm=new Vue({
+        el:'#app',
+        data:{
+            title:'hi vuejs',
+            logoImg:'https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png',
+            arr:[1,2,3,4],
+            info:{id:1,username:'andy'},
+            arrs:[
+                {id:1,username:'andy'},
+                {id:2,username:'mark'}
+            ]
+        }
+    })
+
+    console.log(vm);
+</script>
+</html>

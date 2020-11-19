@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <h2>组件就是对原生HTML代码的封装，组件内部会使用很多的原生HTML代码。</h2>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    <!--实例化之前-->
+    /*
+    * 参数1：string，组件的名称，当组件定义完成后，我们可以在HTML的body里面，像使用原生标签的方式去使用组件
+    * 参数2：object，组建的描述。一般我们称之为组件对象，大致描述
+    * a. 描述组件的结构，使用html描述（必须），如果页面结构代码里面出现
+    * b. 定义组件的样式（全局组件，只能使用style行内样式或者class样式）
+    * c. 定义行为
+    * d. 定义数据
+    * e. 定义生命周期函数
+    * 注意3：
+    * */
+    Vue.component('mycomponent',{
+        // 注意1：Component template should contain exactly one element.
+        // template:`<h2 class="headerH2` style="color:red;">我是第一个全局组件</h2>
+        template:`
+            <div>
+                <h2 class="headerH2" style="color:red;">我是第一个全局组件</h2>
+                <p>{{ counter }}</p>
+                <button @click="clickHandler">按钮</button>
+            </div>`,
+        method:{
+            clickHandler(event){
+                console.log()
+            }
+        }
+    });
+    new Vue({
+        el:'#app',
+        data:{}
+    });
+</script>
+</html>

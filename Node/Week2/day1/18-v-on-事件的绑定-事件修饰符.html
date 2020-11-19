@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [v-cloak]{
+            diaplay:none;
+        }
+        .btn{
+            width: 50px;
+            height: 30px;
+            border: 1px solid #000;
+        }
+        .active{
+            background-color: gold;
+        }
+        .btn-danger{
+            color: red;
+        }
+        .un{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <from action="">
+        用户名：<input type="text" v-model="username" />
+        <!--prevent 阻止-->
+        <!--时间修饰符 prevent-->
+        <!--冒泡 .stop-->
+        <input type="submit" @click.prevent="submitHandler" />
+        <input type="text" @change="changeHandler" />
+    </from>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    function fn() {
+        alert('fn call ...');
+    }
+
+    var vm=new Vue({
+        el:'#app',
+        methods:{
+            changeHandler(){
+                console.log('changeHandler');
+            },
+            submitHandler(event){
+                event.preventDefault();  // 阻止表单的默认事件（提交自动刷新页面）
+                console.log(this.username);
+                console.log('submitHandler');
+                // 表单收集，异步的提交
+                // ajax
+            }
+        },
+        data:{
+            username:'',
+        }
+    })
+
+    console.log(vm);
+</script>
+</html>

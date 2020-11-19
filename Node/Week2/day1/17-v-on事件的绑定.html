@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [v-cloak]{
+            diaplay:none;
+        }
+        .btn{
+            width: 50px;
+            height: 30px;
+            border: 1px solid #000;
+        }
+        .active{
+            background-color: gold;
+        }
+        .btn-danger{
+            color: red;
+        }
+        .un{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h2>传统操作</h2>
+    <button onclick="alert(1)">按钮</button>
+    <button onclick="fn()">回调函数按钮</button>
+</div>
+<div id="app">
+    <h2>vuejs事件绑定</h2>
+    <!--v-on事件绑定：后面加上事件的名称，不要加前缀on-->
+    <!--属性的值，一个回调函数，名称用户自定义-->
+    <!--回调函数写在vuejs实例化的时候的methods属性里面-->
+    <!--注意回调函数可以加上括号，也可以不加-->
+    <!--区别：如果不加，则默认传递event事件源对象-->
+    <!--如果加上括号，则需要手工传递一个$event事件源对象-->
+    <button v-on:click="clickHandler">vuejs按钮</button>
+    <button v-on:click="clickHandler()">vuejs按钮</button>
+    <button v-on:click="clickHandler($event,123)">vuejs按钮</button>
+
+    <hr>
+    <!--简化写法：@ 代表事件绑定-->
+    <button @click="clickHandler($event,123)">@ vuejs按钮</button>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    function fn() {
+        alert('fn call ...');
+    }
+
+    var vm=new Vue({
+        el:'#app',
+        methods:{
+            // 这个地方的回调函数不能写成箭头函数，写成箭头函数之后this就不再指向vm实例对象，而是指向window
+            clickHandler(event,id) {
+                // 回调函数里面的this代表当前的vm实例对象
+                console.log(this);  // vm
+                console.log(this.$data.title);
+                console.log(this.title);
+                console.log(event);
+                console.log(id);
+                console.log('clickHandler');
+            }
+        },
+        data:{
+            title:'hi vuejs',
+            logoImg:'https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png',
+            className1:'btn',
+            className2:'btn-danger',
+            style1:'width: 200px;height: 300px;color: red;',
+            style2:'font-size: 40px;',
+            arr:[1,2,3,4],
+            info:{id:1,username:'andy'},
+            arrs:[
+                {id:1,username:'andy'},
+                {id:2,username:'mark'}
+            ]
+        }
+    })
+
+    console.log(vm);
+</script>
+</html>

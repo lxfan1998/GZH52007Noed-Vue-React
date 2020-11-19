@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [v-cloak]{
+            diaplay:none;
+        }
+        .btn{
+            width: 50px;
+            height: 30px;
+            border: 1px solid #000;
+        }
+        .active{
+            background-color: gold;
+        }
+        .btn-danger{
+            color: red;
+        }
+        .un{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--v-show接受一个boolean值，如果为true则元素显示，否则元素隐藏-->
+    <!--底层原理是设置元素的 display: none; 或者 display: block; -->
+    <div v-show="isShow">
+        qbireg vhuir bqerhuib vqnreihg boquit buiqoth bu verg. bvqhek nionqe vernu vernlug vqrg qver.
+    </div>
+    <button @click="clickHandler">点击隐藏</button>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    function fn() {
+        alert('fn call ...');
+    }
+
+    var vm=new Vue({
+        el:'#app',
+        methods:{
+            clickHandler(){
+                console.log('clickHandler');
+                this.isShow=false;
+            }
+        },
+        data:{
+            username:'',
+            isShow:true,
+        }
+    })
+
+    console.log(vm);
+</script>
+</html>
