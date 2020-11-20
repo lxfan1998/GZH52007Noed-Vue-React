@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
+    <h1>原生的HTML标签的内部是可以存放内容的</h1>
+    <my-component>尝试在组件的内部存放内容</my-component>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    Vue.component('my-component',{
+        template: `
+        <div>
+            <h2>学习一下组件的插槽知识点</h2>
+            <p>vuejs自带一个slot的组件，该组件类似一个占位符。后面再组件调用的时候，如果组件调用内部传递内容，到时候会拿该内容替换slot占位符。</p>
+</div>`
+    })
+    new Vue({
+        el: '#app',
+        data: {}
+    });
+</script>
+</html>

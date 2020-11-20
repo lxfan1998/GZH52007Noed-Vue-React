@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--双大括号一般我们称之为插值表达式，后面学习vuejs使用-->
+    <h1>{{user.name}}</h1>
+    <ul>
+    {{each newsList}}
+        <li><a href="">序号：{{$index}}=={{$value.title}}</a></li>
+    {{/each}}
+    </ul>
+</body>
+</html>

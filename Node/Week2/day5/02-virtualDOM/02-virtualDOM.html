@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
+
+</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+
+    <!--组件的组成：1. 结构 2. 样式 3. 行为-->
+    Vue.component('my-virtual-dom',{
+        template:`
+            <div>
+                <h2>virtual DOM</h2>
+        </div>`
+    });
+
+    // 我们再实例化Vue的时候，其实Vue也是一个组件，该组件我们称之为根组件Root组件。页面上的其他组件都是该组件的嵌套组件。
+
+    // 如果我们的根组件里面存在template属性，则在实例化根组件后，会拿template
+    // 根组件，除了el和template的方式定义页面的结构，还可以使用一个render函数来进行页面结构的定义。
+    new Vue({
+        el: '#app',
+        data: {},
+        template: `
+            <div>
+                <h2>根组件</h2>
+            </div>`,
+        render: function (createElement) {
+            // render函数的返回值 就是 该组件的页面结构
+            // 返回的内容是 一个虚拟DOM
+            // 该虚拟DOM是通过 传递的createElement函数进行生成的。
+            // createElement 该函数的参数是什么？
+            // 该函数的参数是一个组件的描述对象
+
+            // 什么是虚拟DOM？
+            // 在vuejs里面通过vuejs特定的api（cerateElement）函数，我们可以使用js对象去描述一个DOM结构。<div id=1 class='box'>div里面的内容</div>
+        }
+    });
+</script>
+</html>

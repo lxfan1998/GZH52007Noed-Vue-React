@@ -13,10 +13,9 @@
     <!--模板引擎的底层：正则+替换-->
     <h1>{{newsTitle}}</h1>
     <ul>
-        <li><a href="">新闻1</a></li>
-        <li><a href="">新闻2</a></li>
-        <li><a href="">新闻3</a></li>
-        <li><a href="">新闻4</a></li>
+    {{each newsList}}
+        <li><a href="">序号：{{$index}}=={{$value.title}}</a></li>
+    {{/each}}
     </ul>
 </body>
 </html>

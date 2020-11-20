@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
+    <h1>原生的HTML标签的内部是可以存放内容的</h1>
+    <my-component>尝试在组件的内部存放内容</my-component>
+    <P>注意：组件不做任何处理的情况下，如果尝试把组件当成原生HTML标签使用，在其内部存放内容的时候，是不会显示的，组件的内容会被组件定义时候</P>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {}
+    });
+</script>
+</html>

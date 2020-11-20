@@ -246,6 +246,32 @@ Browsersync能让浏览器实时、快速响应文件更改（html、js、css、
 
 ## 安装和使用
 安装命令：`npm install express --save`或者`yarn add express`，--save可以省略。
+引入：`const express = require('express');`
+得到一个服务器实例`http.createServer();`
+
+
+# Postman
++ 专门实现url地址进行调试的，后期做api接口开发的时候要使用，以及前后端分离要使用。
++ 不是浏览器，只是实现了浏览器的一部分功能。
++ 借助这个工具，可以实现各种http请求的方法。后期做接口开发的时候，服务器写了很多代码，需要给一些其他的用户，比如像Android、iOS开发的时候，就可以用
+Postman进行调试。
+
+# art-template
+> art-template 是一个简约、超快的模板引擎。
+
+> 它采用作用域预声明的技术来优化模板渲染速度，从而获得接近 JavaScript 极限的运行性能，并且同时支持 NodeJS 和浏览器。
+
+官方网址：http://aui.github.io/art-template/zh-cn/docs/
+
+## 语法
+```shell
+    {{each target}}
+        {{$index}} {{$value}}
+    {{/each}}
+```
++ target：要遍历的那个复合数据
++ $index：target的下标
++ $value：target里面的每一个元素
 
 # 3.mongodb学习
 

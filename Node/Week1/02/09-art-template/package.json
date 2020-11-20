@@ -1,10 +1,10 @@
 {
-  "name": "08-express",
+  "name": "09-art-template",
   "version": "1.0.0",
   "main": "index.js",
+  "author": "luoxiaofan",
   "license": "MIT",
   "dependencies": {
-    "art-template": "^4.13.2",
-    "express": "^4.17.1"
+    "art-template": "^4.13.2"
   }
 }

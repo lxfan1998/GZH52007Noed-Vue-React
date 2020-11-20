@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="app" class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <!--1. 头部  2. 主体 3. 底部-->
+            <my-panner>
+                <div>
+                    我们的头部内容
+                </div>
+            </my-panner>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {}
+    });
+</script>
+</html>
