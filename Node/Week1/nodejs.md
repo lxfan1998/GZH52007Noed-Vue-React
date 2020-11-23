@@ -275,6 +275,72 @@ Postman进行调试。
 
 # 3.mongodb学习
 
+## 数据库
++ mysql（用得比较多）
++ SQLserver
++ db2
++ oracle
++ MongoDB（芒果）
+......
+
+## MongoDB
+> MongoDB是数据库，存储数据的仓库。
+
+## 数据分类
++ 关系型数据库
+    + mysql
+        + 行和列构成的二维表（table）
+        + sql（结构化的查询语句）
++ 非关系型数据库（nodejs+MongoDB（j方式的api操作））
+    + MongoDB
+        + key=value（键值对）构成hash表
+        + 没有sql，使用官方api函数
+
+
+## 安装
+官方网址：https://www.mongodb.com/try/download/community
+
+注意版本和系统
+
+## 使用
+安装目录下/MongoDB/Server/4.2/bin：
+> MongoDB是c/s架构软件（软件有两种架构一种是c/s一种是b/s）。
+
+1. s：server，必须先运行，监听一个端口（27017），开启服务。命令：mongodb.exe（且必须在/MongoDB/Server/4.2/bin目录下执行命令行）。
+2. 使用客户端操纵服务器端（只能通过客户端操纵服务器端，前提是服务器开启了）。
+
++ 命令行（一定要在/MongoDB/Server/4.2/bin目录下）
+    + mongod.exe：
+    开启服务器（端口号27017），c/s架构中，s（服务器）是不能关闭的，关闭了会导致客户端无法操作。
+        + 报错：
+        ```
+        sexception in initAndListen: NonExistentPath: Data directory C:\data\db\ not found. Create the missing directory or specify another path using (1) the --dbpath command line option, or (2) by adding the 'storage.dbPath' option in the configuration file., terminating
+        ```
+        + 解决方法：直接在C盘下创建一个文件夹，命名为data，然后再data文件夹里再建一个文件夹，命名为db。
+               
+    + mongo.exe：打开客户端。
+
+
+（Week1Day4上午）
+
+# 课程目标
+1. mongoose库
+2. 使用nodejs+MongoDB+mongoose实现一个电影网站系统（前后端+接口联调）
+
+# mongoose库
+
+mongoose是一个使用npm管理的包，可以让我们使用程序的方式去操作mongodb数据库。
+
+mongodb数据库是一个c/s架构的软件。
++ s 服务器先启动（27017）
++ c 客户端连接操作
+    + mongo.exe命令行
+    + robot3t 可视化图形界面操作（掌握）
+    + mongoose程序操作数据库
+
+## mongoose库使用
+
+
 
 （Week1Day4下午）
 

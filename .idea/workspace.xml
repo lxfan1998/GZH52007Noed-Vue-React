@@ -2,24 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4c9976c-10ee-41d1-a279-40c6e97e6d56" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/Node/Week1/02/08-express/views/news.art" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week1/02/09-art-template/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week1/02/09-art-template/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week2/day5/01-slot/01-slot.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week2/day5/01-slot/02-slot.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week2/day5/01-slot/03-slot-alert.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week2/day5/01-slot/04-slot-name.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week2/day5/02-virtualDOM/02-virtualDOM.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week2/day5/05-user-cms/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week2/day5/05-user-cms/spa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/src/views/About.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/src/views/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/src/views/About.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/src/views/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/02-present/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/03-vue-ui-app/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/03-vue-ui-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/03-vue-ui-app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/03-vue-ui-app/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/03-vue-ui-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/03-vue-ui-app/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/03-vue-ui-app/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/03-vue-ui-app/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/03-vue-ui-app/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/03-vue-ui-app/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/03-vue-ui-app/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/03-vue-ui-app/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/03-vue-ui-app/src/views/About.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/03-vue-ui-app/src/views/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/03-vue-ui-app/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/images/创建一个项目1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/01/images/脚手架创建项目得到的目录结构.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/Week1/02/08-express/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/02/08-express/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/Week1/02/08-express/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/02/08-express/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/Week1/02/08-express/views/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/02/08-express/views/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/Week1/02/08-express/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/02/08-express/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/02/10-express-art-template/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/02/10-express-art-template/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/02/10-express-art-template/views/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/02/10-express-art-template/views/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/History.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/dist/browser.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/dist/browser.umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/dist/createBasicSchemaDefinition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/connection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/document.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/helpers/model/discriminator.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/helpers/model/discriminator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/helpers/query/castUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/helpers/query/castUpdate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/query.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/types/core_array.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/types/core_array.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/lib/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/node_modules/mongoose/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Node/Week1/nodejs.md" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/nodejs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/Week2/Vue.md" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week2/Vue.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,13 +90,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Node/Week1/nodejs.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="679">
-                <caret line="273" column="23" selection-start-line="273" selection-start-column="23" selection-end-line="273" selection-end-column="23" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/Node/Week1/03/01-mongoose/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-125">
+              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -49,9 +103,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="vuejs2.x文件模板" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -97,10 +151,17 @@
         <option value="$PROJECT_DIR$/Node/Week1/02/08-express/views/news.html" />
         <option value="$PROJECT_DIR$/Node/Week1/02/09-art-template/.gitignore" />
         <option value="$PROJECT_DIR$/Node/Week1/02/09-art-template/app.js" />
-        <option value="$PROJECT_DIR$/Node/Week1/nodejs.md" />
         <option value="$PROJECT_DIR$/Node/Week1/02/09-art-template/views/tpl-user.art" />
         <option value="$PROJECT_DIR$/Node/Week1/02/08-express/views/news.art" />
         <option value="$PROJECT_DIR$/Node/Week1/02/08-express/app.js" />
+        <option value="$PROJECT_DIR$/Node/Week1/02/10-express-art-template/views/news.html" />
+        <option value="$PROJECT_DIR$/Node/Week1/02/10-express-art-template/app.js" />
+        <option value="$PROJECT_DIR$/Node/Week1/nodejs.md" />
+        <option value="$PROJECT_DIR$/Node/Week1/03/01-mongoose/app.js" />
+        <option value="$PROJECT_DIR$/Node/Week3/public/index.html" />
+        <option value="$PROJECT_DIR$/Node/Week3/README.md" />
+        <option value="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/src/App.vue" />
+        <option value="$PROJECT_DIR$/Node/Week1/03/01-mongoose/.gitignore" />
       </list>
     </option>
   </component>
@@ -111,9 +172,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="618" />
+    <option name="x" value="738" />
     <option name="y" value="19" />
-    <option name="width" value="750" />
+    <option name="width" value="630" />
     <option name="height" value="673" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -122,7 +183,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,35 +206,34 @@
               <item name="GZH52007Noed-Vue-React" type="462c0819:PsiDirectoryNode" />
               <item name="Node" type="462c0819:PsiDirectoryNode" />
               <item name="Week1" type="462c0819:PsiDirectoryNode" />
-              <item name="02" type="462c0819:PsiDirectoryNode" />
+              <item name="03" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GZH52007Noed-Vue-React" type="b2602c69:ProjectViewProjectNode" />
               <item name="GZH52007Noed-Vue-React" type="462c0819:PsiDirectoryNode" />
               <item name="Node" type="462c0819:PsiDirectoryNode" />
               <item name="Week1" type="462c0819:PsiDirectoryNode" />
-              <item name="02" type="462c0819:PsiDirectoryNode" />
-              <item name="08-express" type="462c0819:PsiDirectoryNode" />
+              <item name="03" type="462c0819:PsiDirectoryNode" />
+              <item name="01-mongoose" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GZH52007Noed-Vue-React" type="b2602c69:ProjectViewProjectNode" />
               <item name="GZH52007Noed-Vue-React" type="462c0819:PsiDirectoryNode" />
               <item name="Node" type="462c0819:PsiDirectoryNode" />
-              <item name="Week1" type="462c0819:PsiDirectoryNode" />
-              <item name="02" type="462c0819:PsiDirectoryNode" />
-              <item name="08-express" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Week2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
@@ -230,11 +289,12 @@
       <workItem from="1605690926187" duration="9069000" />
       <workItem from="1605747267419" duration="19747000" />
       <workItem from="1605833735026" duration="24060000" />
+      <workItem from="1605920473474" duration="36894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58184000" />
+    <option name="totallyTimeSpent" value="95078000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -246,9 +306,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="618" y="19" width="750" height="673" extended-state="0" />
+    <frame x="738" y="19" width="630" height="673" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.48314607" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.5472973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -260,7 +321,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3283859" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.35435992" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="调试" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -272,28 +333,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Node/nodejs.md" />
-    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/views/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/config/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/01/04-core/01-fs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/views/movie/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -537,13 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/02/08-express/views/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Node/Week1/02/08-express/views/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -574,21 +606,97 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Node/Week1/02/08-express/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="88" column="28" lean-forward="true" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
-          <folding>
-            <element signature="e#2357#2700#0" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/02/08-express/views/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/02/10-express-art-template/views/news.art">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/02/10-express-art-template/views/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/02/10-express-art-template/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Node/Week1/nodejs.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="679">
-            <caret line="273" column="23" selection-start-line="273" selection-start-column="23" selection-end-line="273" selection-end-column="23" />
+          <first_editor relative-caret-position="170">
+            <caret line="341" selection-start-line="341" selection-end-line="341" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week3/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week3/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="305">
+            <caret line="188" column="253" selection-start-line="188" selection-start-column="253" selection-end-line="188" selection-end-column="253" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/03/01-mongoose/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/03/01-mongoose/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
         </state>
       </provider>
     </entry>

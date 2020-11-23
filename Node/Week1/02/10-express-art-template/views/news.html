@@ -6,17 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <!--占位符-->
-    <!--我们在页面里面实现定义好一些占位符的页面，我们称之为模板-->
-    <!--引擎这个工具可以把我们js里面的变量替换到这些占位符里面-->
-    <!--模板引擎有很多：art-template、jade、pug、ejs...-->
-    <!--模板引擎的底层：正则+替换-->
     <h1>{{newsTitle}}</h1>
+    <hr>
+    <hr>
     <ul>
-        <li><a href="">新闻1</a></li>
-        <li><a href="">新闻2</a></li>
-        <li><a href="">新闻3</a></li>
-        <li><a href="">新闻4</a></li>
+        {{each newsList}}
+        <li><a href="">序号：{{$index}}=={{$value.title}}</a></li>
+        {{/each}}
     </ul>
 </body>
 </html>

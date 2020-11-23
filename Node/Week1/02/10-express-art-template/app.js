@@ -1,10 +1,17 @@
 // 1.引入一个第三方的模块express（底层http模块的封装）
 const express = require('express');
 const fs = require('fs');
-const template = require('art-template');
+const path=require('path');
 
 // 2.得到一个服务器实例http.createServer();
 const app = express();
+
+// 复制中文版的，英文版的代码调试那句会少一个options，报错
+// 设置模板的后缀，用户可以自定义
+app.engine('html', require('express-art-template'));
+// 设置模板文件的目录
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'html');
 
 const port = 3000;
 
@@ -113,21 +120,9 @@ app.get('/news', (req, res) => {
             img:'',
         },
     ];
-    // 1. news.html 新闻页面
-    // 希望读取出来的页面可以使用代码处定义的变量
-    //express-art-template
-
-    // let fileName='./views/news.html';
-    // let htmlString=fs.readFileSync(fileName,'utf-8');
-    // 正则 查找、替换的
-    // let newHtml=htmlString.replace('{{newsTitle}}',newsTitle);
-    // 基本数据类型很好替换，但是复合数据类型不好替换，newslist不好替换，newslist自己不要实现，使用第三方的模板引擎进行实现。专门实现这种页面里面的变量替换操作。
-    // console.log(newHtml);
-    // console.log(htmlString);
-    // res.send(newHtml);
-
-    var html = template(__dirname + '/views/news.art', {newsList,newsTitle});
-    res.send(html);
+    // 使用res.render方法，render：渲染
+    // 模板一般也称为视图
+    res.render('news',{newsTitle,newsList});
 });
 
 // 3.监听端口，提供web服务

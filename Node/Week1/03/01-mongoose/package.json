@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "mongoose": "^5.10.13"
-  }
+    "mongoose": "^5.10.15"
+  },
+  "author": "luoxiaofan"
 }
