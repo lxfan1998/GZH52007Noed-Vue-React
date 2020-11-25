@@ -2,17 +2,145 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4c9976c-10ee-41d1-a279-40c6e97e6d56" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/cms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/cms_find.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week3/02/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/css/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/css/theme1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/css/theme2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/css/theme3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/css/theme4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/css/theme5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/css/xadmin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/fonts/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/fonts/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/fonts/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/fonts/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/images/aiwrap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/images/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/js/xadmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/js/xcity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/rate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/admin/lib/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/back.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/movie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week3/03/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/01-mongoose/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/back.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/movie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Node/Week1/nodejs.md" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/nodejs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week3/01/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,19 +160,69 @@
         <entry file="file://$PROJECT_DIR$/Node/Week1/nodejs.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="527">
-                <caret line="426" column="22" selection-start-line="426" selection-start-column="22" selection-end-line="426" selection-end-column="22" />
+              <first_editor relative-caret-position="570">
+                <caret line="394" column="113" selection-start-line="394" selection-start-column="113" selection-end-line="394" selection-end-column="113" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="347" column="51" selection-start-line="347" selection-start-column="51" selection-end-line="347" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+            <state relative-caret-position="198">
+              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/welcome.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/back.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/movie.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -60,17 +238,17 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>welcome</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/views/movie/lst.html" />
-        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/config/db.js" />
-        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/models/movieModel.js" />
-        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/views/login.html" />
-        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/controllers/backController.js" />
         <option value="$PROJECT_DIR$/Node/Week2/day1/07-vuejs的指令-v-html.html" />
         <option value="$PROJECT_DIR$/Node/Week2/day1/08-vuejs的指令-v-text.html" />
         <option value="$PROJECT_DIR$/Node/Week2/day1/09-符合数据类型处理-v-for.html" />
@@ -107,16 +285,21 @@
         <option value="$PROJECT_DIR$/Node/Week1/02/10-express-art-template/views/news.html" />
         <option value="$PROJECT_DIR$/Node/Week1/02/10-express-art-template/app.js" />
         <option value="$PROJECT_DIR$/Node/Week3/public/index.html" />
-        <option value="$PROJECT_DIR$/Node/Week3/README.md" />
         <option value="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/src/App.vue" />
         <option value="$PROJECT_DIR$/Node/Week1/03/01-mongoose/.gitignore" />
         <option value="$PROJECT_DIR$/Node/Week3/02/README.md" />
         <option value="$PROJECT_DIR$/Node/Week1/03/01-mongoose/app.js" />
         <option value="$PROJECT_DIR$/Node/Week1/03/01-mongoose/cms.js" />
         <option value="$PROJECT_DIR$/Node/Week1/03/01-mongoose/cms_find.js" />
-        <option value="$PROJECT_DIR$/Node/Week1/nodejs.md" />
         <option value="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/.gitignore" />
+        <option value="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/movie.js" />
+        <option value="$PROJECT_DIR$/Node/Week3/README.md" />
+        <option value="$PROJECT_DIR$/Node/Week3/03/README.md" />
+        <option value="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/back.js" />
         <option value="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/app.js" />
+        <option value="$PROJECT_DIR$/Node/Week1/nodejs.md" />
+        <option value="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/dashboard.html" />
+        <option value="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/index.js" />
       </list>
     </option>
   </component>
@@ -127,10 +310,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="621" />
+    <option name="x" value="482" />
     <option name="y" value="19" />
-    <option name="width" value="747" />
-    <option name="height" value="673" />
+    <option name="width" value="886" />
+    <option name="height" value="647" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -162,7 +345,7 @@
               <item name="GZH52007Noed-Vue-React" type="462c0819:PsiDirectoryNode" />
               <item name="Node" type="462c0819:PsiDirectoryNode" />
               <item name="Week1" type="462c0819:PsiDirectoryNode" />
-              <item name="02" type="462c0819:PsiDirectoryNode" />
+              <item name="03" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GZH52007Noed-Vue-React" type="b2602c69:ProjectViewProjectNode" />
@@ -170,6 +353,7 @@
               <item name="Node" type="462c0819:PsiDirectoryNode" />
               <item name="Week1" type="462c0819:PsiDirectoryNode" />
               <item name="03" type="462c0819:PsiDirectoryNode" />
+              <item name="02-pj-show" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GZH52007Noed-Vue-React" type="b2602c69:ProjectViewProjectNode" />
@@ -192,6 +376,47 @@
               <item name="GZH52007Noed-Vue-React" type="b2602c69:ProjectViewProjectNode" />
               <item name="GZH52007Noed-Vue-React" type="462c0819:PsiDirectoryNode" />
               <item name="Node" type="462c0819:PsiDirectoryNode" />
+              <item name="Week1" type="462c0819:PsiDirectoryNode" />
+              <item name="03" type="462c0819:PsiDirectoryNode" />
+              <item name="03-pj" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GZH52007Noed-Vue-React" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GZH52007Noed-Vue-React" type="462c0819:PsiDirectoryNode" />
+              <item name="Node" type="462c0819:PsiDirectoryNode" />
+              <item name="Week1" type="462c0819:PsiDirectoryNode" />
+              <item name="03" type="462c0819:PsiDirectoryNode" />
+              <item name="03-pj" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GZH52007Noed-Vue-React" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GZH52007Noed-Vue-React" type="462c0819:PsiDirectoryNode" />
+              <item name="Node" type="462c0819:PsiDirectoryNode" />
+              <item name="Week1" type="462c0819:PsiDirectoryNode" />
+              <item name="03" type="462c0819:PsiDirectoryNode" />
+              <item name="03-pj" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GZH52007Noed-Vue-React" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GZH52007Noed-Vue-React" type="462c0819:PsiDirectoryNode" />
+              <item name="Node" type="462c0819:PsiDirectoryNode" />
+              <item name="Week1" type="462c0819:PsiDirectoryNode" />
+              <item name="03" type="462c0819:PsiDirectoryNode" />
+              <item name="03-pj" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GZH52007Noed-Vue-React" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GZH52007Noed-Vue-React" type="462c0819:PsiDirectoryNode" />
+              <item name="Node" type="462c0819:PsiDirectoryNode" />
               <item name="Week3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -199,7 +424,7 @@
               <item name="GZH52007Noed-Vue-React" type="462c0819:PsiDirectoryNode" />
               <item name="Node" type="462c0819:PsiDirectoryNode" />
               <item name="Week3" type="462c0819:PsiDirectoryNode" />
-              <item name="01" type="462c0819:PsiDirectoryNode" />
+              <item name="03" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -228,14 +453,17 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Node&amp;Vue&amp;React\GZH52007Noed-Vue-React\Node\Week2" />
-      <recent name="F:\Node&amp;Vue&amp;React\GZH52007Noed-Vue-React\Node\Week2\day4\01-vue-component" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week1\03\03-pj\backend\views" />
+      <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week1\03\03-pj\backend\public\admin" />
+      <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week1\03\03-pj\backend\public" />
       <recent name="F:\Node&amp;Vue&amp;React\GZH52007Noed-Vue-React\Node\Week1\03\01-mongoose" />
       <recent name="F:\Node&amp;Vue&amp;React\GZH52007Noed-Vue-React\Node\Week1\02\08-express\views" />
-      <recent name="F:\Node&amp;Vue&amp;React\GZH52007Noed-Vue-React\Node\Week2\day5\01-slot" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week3\01" />
+      <recent name="F:\Node&amp;Vue&amp;React\GZH52007Noed-Vue-React\Node\Week2" />
+      <recent name="F:\Node&amp;Vue&amp;React\GZH52007Noed-Vue-React\Node\Week2\day4\01-vue-component" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -271,11 +499,12 @@
       <workItem from="1605920473474" duration="37307000" />
       <workItem from="1606179444637" duration="19602000" />
       <workItem from="1606221339592" duration="2538000" />
+      <workItem from="1606265630026" duration="19666000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117631000" />
+    <option name="totallyTimeSpent" value="137297000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -287,9 +516,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="621" y="19" width="747" height="673" extended-state="0" />
+    <frame x="482" y="19" width="886" height="647" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.54442877" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5389151" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32901135" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -313,62 +542,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Node/Week2/day4/01-vue-component/01-vuejs-全局组件-烤串法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week2/day4/01-vue-component/02-vuejs-全局组件-全部小写.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week2/day4/01-vue-component/03-vuejs-全局组件-小驼峰.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week2/day4/01-vue-component/04-vuejs-局部组件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week2/day4/02-vuejs-component-comunite/01-farher-son.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week2/day1/10-v-pre.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="33" lean-forward="true" selection-end-line="49" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week2/day1/11-v-cloak.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week2/day1/02-vuejs的使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Node/Week2/day1/18-v-on-事件的绑定-事件修饰符.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -545,16 +718,6 @@
     <entry file="file://$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week3/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="305">
-            <caret line="188" column="253" selection-start-line="188" selection-start-column="253" selection-end-line="188" selection-end-column="253" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -620,27 +783,10 @@
     <entry file="file://$PROJECT_DIR$/Node/Week1/03/02-pj-show/movieSite/config/db.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/back.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/nodejs.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="527">
-            <caret line="426" column="22" selection-start-line="426" selection-start-column="22" selection-end-line="426" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -658,12 +804,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+    <entry file="file://$PROJECT_DIR$/Node/Week3/01/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="352">
+            <caret line="198" column="1" selection-start-line="198" selection-start-column="1" selection-end-line="198" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week3/03/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="808">
+            <caret line="123" column="48" selection-start-line="123" selection-start-column="48" selection-end-line="123" selection-end-column="48" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/bg.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/back.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/movie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/nodejs.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="570">
+            <caret line="394" column="113" selection-start-line="394" selection-start-column="113" selection-end-line="394" selection-end-column="113" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="347" column="51" selection-start-line="347" selection-start-column="51" selection-end-line="347" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/welcome.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

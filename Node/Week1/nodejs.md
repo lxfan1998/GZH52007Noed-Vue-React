@@ -392,7 +392,7 @@ https://h5.woaikaifa.com/apis/
 ### 数据库的导入
 在C:\Program Files\MongoDB\Server\4.2\bin目录下输入cmd命令：
 ```
-    mongorestore.exe -d movieCms --dir E:\GzH507\learn\week1\03\资料\movieCms\movieCms
+    mongorestore.exe -d movieCms --dir F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week1\03\02-pj-show\movieCms
 ```
 + mongorestore.exe：导入命令，mongodb提供的。
 + -d：database的简写，代表数据库的名称。
