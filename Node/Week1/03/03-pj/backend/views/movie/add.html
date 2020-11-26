@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="x-admin-sm">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>电影添加</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+        <!--./css/font.css，相对路径，处理-->
+        <!--1. 获取当前地url地址的文件的上级-->
+        <!--http://localhost:3000/admin/movie/list-->
+        <!--2. 和当前的资源进行拼接-->
+        <!--实际url地址：http://localhost:3000/admin/movie/css/font.css-->
+        <!--自己的服务器的静态资源访问规则：localhost:3000/admin/movie/css或者localhost:3000/admin/movie/images-->
+        <!--https和http开头的，绝对路径-->
+        <!--把url地址改为绝对路径，/代表的是网站根目录，就是域名和端口-->
+        <!--http://localhost:3000-->
+        <!---->
+        <link rel="stylesheet" href="/admin/css/font.css">
+        <link rel="stylesheet" href="/admin/css/xadmin.css">
+        <script type="text/javascript" src="/admin/lib/layui/layui.js" charset="utf-8"></script>
+        <script type="text/javascript" src="/admin/js/xadmin.js"></script>
+        <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+        <!--[if lt IE 9]>
+            <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+            <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="layui-fluid">
+            <div class="layui-row">
+                <!--1. 提交的地址 2. 提交方式 3. 设置提交的编码 4. 设置提交的字段-->
+                <!--收集数据，用post-->
+                <form action="/admin/movie/store" method="post" enctype="application/x-www-form-urlencoded" class="layui-form">
+                  <div class="layui-form-item">
+                      <label for="moviename" class="layui-form-label">
+                          <span class="x-red">*</span>电影名称
+                      </label>
+                      <div class="layui-input-inline">
+                          <input type="text" id="moviename" name="moviename" autocomplete="off" class="layui-input">
+                      </div>
+                      <div class="layui-form-mid layui-word-aux">
+                          <span class="x-red">*</span>请输入电影名称
+                      </div>
+                  </div>
+
+                    <div class="layui-form-item">
+                        <label for="director" class="layui-form-label">
+                            <span class="x-red">*</span>导演
+                        </label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="director" name="director" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label for="actors" class="layui-form-label">
+                            <span class="x-red">*</span>演员
+                        </label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="actors" name="actors" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+
+                    <div class="layui-form-item">
+                      <label for="submit-add" class="layui-form-label"></label>
+                        <!--现在自己编程完成表单的提交，而不使用x-admin里面继承的layui提供的提交功能。-->
+                        <!--要使用这个功能需要学习layui产品，增加了学习需要花费时间。课后自学，很多人用layui-->
+                      <button id="submit-add" class="layui-btn" type="submit">
+                          提交
+                      </button>
+                  </div>
+              </form>
+            </div>
+        </div>
+        <script>
+            // 现在自己编程完成表单的提交，而不使用x-admin里面继承的layui提供的提交功能。
+            // 要使用这个功能需要学习layui产品，增加了学习需要花费时间。
+
+        </script>
+    </body>
+
+</html>

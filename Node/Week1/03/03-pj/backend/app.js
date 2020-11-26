@@ -1,12 +1,17 @@
 // 1.引入一个第三方的模块express（底层http模块的封装）
 const express = require('express');
 const path=require('path');
-const movie=require('./router/movie.js');
+const bodyParser = require('body-parser');
+const movieRouter=require('./router/movie.js');
 const backRouter=require('./router/back.js');
 const indexRouter=require('./router/index.js');
 
 const app = express();
 const port = 3000;
+
+// 配置post的处理方式
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // 配置静态资源的处理方式
 // url访问：localhost:3000/bg.png
@@ -30,7 +35,7 @@ app.set('view engine', 'html');
 // 会拿v1和外置路由进行拼接
 // v1/about
 // v1/news
-app.use('/v1', movie);
+app.use('/admin',movieRouter);
 app.use('/admin',backRouter);
 // /admin/dashboard
 app.use('/admin',indexRouter);
