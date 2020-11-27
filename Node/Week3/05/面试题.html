@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // function Foo() {
+    //     var i=0;
+    //     return function () {
+    //         console.log(i++);
+    //     }
+    // }
+    // var f1=Foo();
+    // f2=Foo();
+    // f1();
+    // f1();
+    // f2();
+    // console.log(parseInt("X8?)+parseFloat(,8"));
+    // console.log('parseInt("X8?)+parseFloat(,8")='+parseInt("X8?)+parseFloat(,8"));
+    // console.log('parseInt("X8")+parseFloat("8")='+parseInt("X8")+parseFloat("8"));
+    
+    // function showCase2(value) {
+    //     switch (value) {
+    //         case 'A':
+    //             console.log('Case A');
+    //             break;
+    //         case 'B':
+    //             console.log('Case B');
+    //             break;
+    //         case undefined:
+    //             console.log('undefined');
+    //             break;
+    //         default:
+    //             console.log('Do not know!');
+    //     }
+    // }
+    // showCase2(String('A'));
+
+    function isOdd(num) {
+        return num%2==1;
+    }
+    function isEven(num) {
+        return num%2==0;
+    }
+    function isSane(num) {
+        return isEven(num)||isOdd(num);
+    }
+    var values=[7,4,'13',-9,Infinity];
+    console.log(values.map(isSane));
+</script>
+</html>
