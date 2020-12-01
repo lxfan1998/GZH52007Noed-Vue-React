@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 同步代码
+    // let username='admin';
+    // console.log('start');
+
+    // if(username==='admin'){
+    //     console.log('admin');
+    // }
+    // // 报错：username is not defined
+    // // 代码不继续向下执行
+    // console.log('end');
+
+    // try catch
+    // let username='admin';
+    console.log('start');
+
+    try {
+        // 先尝试执行这里的代码，即使出错也会继续往下执行，不会阻塞后面的代码
+        if(username==='admin'){
+            console.log('admin');
+        }
+    } catch (error) {
+        // 如果出错，就捕获错误
+        console.log("错误信息");
+    }
+
+    console.log('end');
+
+    /* 
+        try catch的优点：
+            * 捕获异常
+            * 不阻塞后面代码的执行
+        
+        两种可能：
+            * 没有出错：start  admin  end
+            * 出错了：start  错误信息  end
+
+
+
+
+     */
+
+</script>
+</html>

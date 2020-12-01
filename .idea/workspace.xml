@@ -2,18 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4c9976c-10ee-41d1-a279-40c6e97e6d56" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/Node/Week1/01/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week1/02/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/controllers/movieController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week1/04/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week3/05/01-ts-class/07-decorator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week3/05/01-ts-class/js/07-decorator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week3/05/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week3/05/面试题.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/db/mgdb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/db/mysql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/db/sqlserver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week4/01/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week4/02/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week4/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/movie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/movie/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/movie/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/Week1/03/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/03/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/config/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/controllers/backController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/controllers/backController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/controllers/movieController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/controllers/movieController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/models/movieModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/models/movieModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/models/userModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/router/api/movie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/router/back.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/router/back.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/router/movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/router/movie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/views/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/views/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/views/movie/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/views/movie/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/views/movie/lst.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/01-pj/front/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/01-pj/front/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week1/04/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/04/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Node/Week1/nodejs.md" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week1/nodejs.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,49 +42,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/movie/add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="34" column="48" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/movie/list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Node/Week1/02/09-art-template/views/tpl-user.art">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/movie.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="5" />
+        <entry file="file://$PROJECT_DIR$/Node/Week1/04/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="414">
+                <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/controllers/movieController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="51" column="11" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="51" selection-end-column="11" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/Node/Week2/Vue.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-4539" />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -82,10 +67,37 @@
         <entry file="file://$PROJECT_DIR$/Node/Week1/nodejs.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="85">
-                <caret line="432" selection-start-line="432" selection-end-line="432" />
+              <first_editor relative-caret-position="7565">
+                <caret line="445" selection-start-line="445" selection-end-line="445" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/controllers/backController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/views/dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2023">
+              <caret line="119" column="37" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/models/userModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -97,8 +109,8 @@
       <list>
         <option value="vuejs2.x文件模板" />
         <option value="TypeScript File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -112,6 +124,8 @@
       <find>欢迎</find>
       <find>MovieModel</find>
       <find>store</find>
+      <find>--dir</find>
+      <find>movie</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,25 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Node/Week2/day5/01-slot/01-slot.html" />
-        <option value="$PROJECT_DIR$/Node/Week2/day5/01-slot/02-slot.html" />
-        <option value="$PROJECT_DIR$/Node/Week2/day5/01-slot/04-slot-name.html" />
-        <option value="$PROJECT_DIR$/Node/Week2/day5/02-virtualDOM/02-virtualDOM.html" />
-        <option value="$PROJECT_DIR$/Node/Week2/Vue.md" />
-        <option value="$PROJECT_DIR$/Node/Week1/02/08-express/views/news.html" />
-        <option value="$PROJECT_DIR$/Node/Week1/02/09-art-template/.gitignore" />
-        <option value="$PROJECT_DIR$/Node/Week1/02/09-art-template/app.js" />
-        <option value="$PROJECT_DIR$/Node/Week1/02/09-art-template/views/tpl-user.art" />
-        <option value="$PROJECT_DIR$/Node/Week1/02/08-express/views/news.art" />
-        <option value="$PROJECT_DIR$/Node/Week1/02/08-express/app.js" />
-        <option value="$PROJECT_DIR$/Node/Week1/02/10-express-art-template/views/news.html" />
-        <option value="$PROJECT_DIR$/Node/Week1/02/10-express-art-template/app.js" />
-        <option value="$PROJECT_DIR$/Node/Week3/public/index.html" />
-        <option value="$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/src/App.vue" />
-        <option value="$PROJECT_DIR$/Node/Week1/03/01-mongoose/.gitignore" />
-        <option value="$PROJECT_DIR$/Node/Week3/02/README.md" />
-        <option value="$PROJECT_DIR$/Node/Week1/03/01-mongoose/app.js" />
-        <option value="$PROJECT_DIR$/Node/Week1/03/01-mongoose/cms.js" />
         <option value="$PROJECT_DIR$/Node/Week1/03/01-mongoose/cms_find.js" />
         <option value="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/.gitignore" />
         <option value="$PROJECT_DIR$/Node/Week3/README.md" />
@@ -166,11 +161,30 @@
         <option value="$PROJECT_DIR$/Node/Week3/05/面试题.html" />
         <option value="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/movie/list.html" />
         <option value="$PROJECT_DIR$/Node/Week1/01/README.md" />
-        <option value="$PROJECT_DIR$/Node/Week1/02/README.md" />
         <option value="$PROJECT_DIR$/Node/Week1/03/README.md" />
-        <option value="$PROJECT_DIR$/Node/Week1/nodejs.md" />
         <option value="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/movie.js" />
         <option value="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/controllers/movieController.js" />
+        <option value="$PROJECT_DIR$/Node/Week1/04/01/backend/models/movieModel.js" />
+        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/controllers/movieController.js" />
+        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/db/mysql.js" />
+        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/db/sqlserver.js" />
+        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/models/movieModel.js" />
+        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/config/db.js" />
+        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/db/mgdb.js" />
+        <option value="$PROJECT_DIR$/Node/Week1/02/README.md" />
+        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/router/back.js" />
+        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/views/login.html" />
+        <option value="$PROJECT_DIR$/Node/Week4/README.md" />
+        <option value="$PROJECT_DIR$/Node/Week4/01/README.md" />
+        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/models/userModel.js" />
+        <option value="$PROJECT_DIR$/Node/Week4/02/README.md" />
+        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/views/dashboard.html" />
+        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/app.js" />
+        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/controllers/backController.js" />
+        <option value="$PROJECT_DIR$/Node/Week1/04/01-pj/backend/router/index.js" />
+        <option value="$PROJECT_DIR$/Node/Week1/nodejs.md" />
+        <option value="$PROJECT_DIR$/Node/Week1/04/README.md" />
+        <option value="$PROJECT_DIR$/Node/Week4/03/async-await-try-catch/01async.html" />
       </list>
     </option>
   </component>
@@ -181,10 +195,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="695" />
+    <option name="x" value="342" />
     <option name="y" value="19" />
-    <option name="width" value="673" />
-    <option name="height" value="647" />
+    <option name="width" value="1026" />
+    <option name="height" value="636" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -208,22 +222,20 @@
               <item name="GZH52007Noed-Vue-React" type="b2602c69:ProjectViewProjectNode" />
               <item name="GZH52007Noed-Vue-React" type="462c0819:PsiDirectoryNode" />
               <item name="Node" type="462c0819:PsiDirectoryNode" />
-              <item name="Week1" type="462c0819:PsiDirectoryNode" />
+              <item name="Week2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GZH52007Noed-Vue-React" type="b2602c69:ProjectViewProjectNode" />
               <item name="GZH52007Noed-Vue-React" type="462c0819:PsiDirectoryNode" />
               <item name="Node" type="462c0819:PsiDirectoryNode" />
-              <item name="Week1" type="462c0819:PsiDirectoryNode" />
-              <item name="03" type="462c0819:PsiDirectoryNode" />
+              <item name="Week4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GZH52007Noed-Vue-React" type="b2602c69:ProjectViewProjectNode" />
               <item name="GZH52007Noed-Vue-React" type="462c0819:PsiDirectoryNode" />
               <item name="Node" type="462c0819:PsiDirectoryNode" />
-              <item name="Week1" type="462c0819:PsiDirectoryNode" />
+              <item name="Week4" type="462c0819:PsiDirectoryNode" />
               <item name="03" type="462c0819:PsiDirectoryNode" />
-              <item name="03-pj" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -254,19 +266,19 @@
     <property name="ts.external.directory.path" value="E:\GzH507\learn\week1\01\01\资料\WebStorm\WebStorm 2018.3.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week1\03\03-pj\backend\views\movie" />
-      <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week1\03\03-pj\backend\views" />
-      <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week1\03\03-pj\backend\public\admin" />
-      <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week1\03\03-pj\backend\public" />
-      <recent name="F:\Node&amp;Vue&amp;React\GZH52007Noed-Vue-React\Node\Week1\03\01-mongoose" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week4\01" />
       <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week3\05\01-ts-class\js" />
       <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week3\04\04-ts-type" />
       <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week3\01" />
       <recent name="F:\Node&amp;Vue&amp;React\GZH52007Noed-Vue-React\Node\Week2" />
-      <recent name="F:\Node&amp;Vue&amp;React\GZH52007Noed-Vue-React\Node\Week2\day4\01-vue-component" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week1\04" />
+      <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week1\03\03-pj\backend\views\movie" />
+      <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week1\03\03-pj\backend\views" />
+      <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week1\03\03-pj\backend\public\admin" />
+      <recent name="F:\Node-Vue-React\GZH52007Noed-Vue-React\Node\Week1\03\03-pj\backend\public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -304,12 +316,15 @@
       <workItem from="1606221339592" duration="2538000" />
       <workItem from="1606265630026" duration="19666000" />
       <workItem from="1606351781356" duration="29901000" />
-      <workItem from="1606438184064" duration="23625000" />
+      <workItem from="1606438184064" duration="26480000" />
+      <workItem from="1606524930837" duration="26521000" />
+      <workItem from="1606784039829" duration="12167000" />
+      <workItem from="1606829103572" duration="40000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190823000" />
+    <option name="totallyTimeSpent" value="232406000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -321,10 +336,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="695" y="19" width="673" height="647" extended-state="0" />
-    <editor active="true" />
+    <frame x="342" y="19" width="1026" height="636" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.46614173" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5303644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32901135" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -337,7 +351,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.35435992" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32868525" />
       <window_info anchor="bottom" id="调试" order="11" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -349,143 +363,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Node/Week1/02/08-express/views/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/02/10-express-art-template/views/news.art">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/02/10-express-art-template/views/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week3/public/index.html" />
-    <entry file="file://$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week3/01/01-vue-cli-app/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/03/01-mongoose/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/02/10-express-art-template/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="116" column="9" lean-forward="true" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week3/02/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="213">
-            <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/03/02-pj-show/movieSite/config/db.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/02/08-express/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="18" lean-forward="true" selection-end-line="133" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/03/02-pj-show/movieSite/public/apis/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="112" column="69" selection-start-line="112" selection-start-column="69" selection-end-line="112" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week3/01/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="352">
-            <caret line="198" column="1" selection-start-line="198" selection-start-column="1" selection-end-line="198" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week3/03/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="808">
-            <caret line="123" column="48" selection-start-line="123" selection-start-column="48" selection-end-line="123" selection-end-column="48" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/public/bg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week3/04/04-ts-type/js/09-array-tunple.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week3/04/04-ts-type/js/10-object.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week3/04/04-ts-type/js/11-object-interface.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week3/04/04-ts-type/js/07-array.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Node/Week3/04/04-ts-type/js/06-nullorundefined.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -663,44 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/02/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="261">
-            <caret line="132" column="16" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/04/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/03/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="343">
-            <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week1/nodejs.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="432" selection-start-line="432" selection-end-line="432" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/router/movie.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -710,11 +549,194 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Node/Week1/03/03-pj/backend/controllers/movieController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="51" column="11" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="51" selection-end-column="11" />
+        <state relative-caret-position="56">
+          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/router/movie.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01/backend/controllers/backController.js" />
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01/backend/models/movieModel.js" />
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/controllers/movieController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="57" column="46" lean-forward="true" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/db/mysql.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/db/sqlserver.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/config/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/db/mgdb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/02/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="17">
+            <caret line="98" column="4" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/03/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="280">
+            <caret line="71" column="113" lean-forward="true" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="113" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/router/back.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/models/movieModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-end-line="34" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week4/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="24" lean-forward="true" selection-end-line="9" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week4/01/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="346">
+            <caret line="28" column="175" lean-forward="true" selection-start-line="28" selection-start-column="175" selection-end-line="28" selection-end-column="175" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week4/02/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="366">
+            <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-247">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/nodejs.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="7565">
+            <caret line="445" selection-start-line="445" selection-end-line="445" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/controllers/backController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2023">
+          <caret line="119" column="37" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/models/userModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week4/03/async-await-try-catch/01async.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week1/04/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="414">
+            <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week2/Vue.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-4539" />
+          <second_editor />
         </state>
       </provider>
     </entry>
