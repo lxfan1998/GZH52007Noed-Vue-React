@@ -1,16 +1,16 @@
 <template>
   <div id="app">
     <h1>count:{{ $store.state.count }}</h1>
-    <ul v-for="item in list" :key="item.id">
-        <li>{{ item.name }}</li>
-    </ul>
+        <!-- <ul v-for="item in list" :key="item.id">
+            <li>{{ item.name }}</li>
+        </ul> -->
 
     <!-- 第二个坑 -->
      <!-- <ul v-if="list.length" v-for="item in list" :key="item.id">
             <li>{{ item.name }}</li>
     </ul> -->
 
-    <!-- v-for已经在遍历渲染了，渲染后才判断，影响性能 -->
+    <!-- v-for已经在遍历渲染了，渲染后才用v-if判断，切换开销更高，影响性能 -->
     <!-- <ul v-for="item in list" :key="item.id">
             <li v-if="list.length">{{ item.name }}</li>
     </ul> -->
@@ -23,11 +23,11 @@
     </div> -->
 
     <!-- template标签渲染之后是不存在的 -->
-    <!-- <template v-if="list.length">
+    <template v-if="list.length">
         <ul v-for="item in list" :key="item.id">
             <li>{{ item.name }}</li>
         </ul>
-    </template> -->
+    </template>
     
   </div>
 </template>
@@ -50,7 +50,7 @@ export default {
         // v-if和v-for不能共用，不能写在同一个节点
         getList().then(res=>{
             this.list=res.data;
-        })
+        });
     },
 }
 </script>
