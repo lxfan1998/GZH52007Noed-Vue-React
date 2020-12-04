@@ -140,6 +140,9 @@ vue-awesome-swiper网址：https://github.com/surmon-china/vue-awesome-swiper
 + Swiper能实现触屏焦点图、触屏Tab切换、触屏多图切换等常用效果。
 + Swiper开源、免费、稳定、使用简单、功能强大，是架构移动端网站的重要选择。
 
+### loading小动画
+参考网址：https://www.cnblogs.com/jr1993/p/4622039.html
+
 ## 1. 首页
 1. 轮播图（基于vue-swiper插件）
 2. 选项卡（vuejs内置component组件，动态组件）

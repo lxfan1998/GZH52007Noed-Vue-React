@@ -27,7 +27,7 @@ instance.interceptors.response.use(function (response) {
     // 对响应数据做点什么
     // 200、201等提示
     // console.log('instance respomse',response);
-    return response.data.data;  // 直接把接口里面的数据响应到调用处。手工的操作
+    return response;  // 直接把接口里面的数据响应到调用处。手工的操作
 
     // return response;
 }, function (error) {

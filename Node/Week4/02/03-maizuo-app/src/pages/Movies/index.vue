@@ -28,10 +28,15 @@
             <li class="tabs-item" :class="{active:currentItem=='coming'}" @click="tabHandler('coming')">即将上映</li>
         </ul>
 
+        <!--动态组件-->
+        <!--<component is=""></component>-->
+
         <!--显示对应的列表-->
         <!--列表组件-->
-        <ul class="list">
-            <li class="list-item" v-for="ele in hotMovies">
+
+        <!--列表组件和Loading组件是互斥的-->
+        <ul class="list" v-if="movieStatus">
+            <li class="list-item" v-for="ele in Movies">
                 <img :src="ele.poster">
                 <div>
                     <h3>{{ele.name}}</h3>
@@ -44,6 +49,7 @@
             </li>
         </ul>
 
+        <Loading v-else/>
         <Nav/>
     </div>
 </template>
@@ -53,13 +59,18 @@
     import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
     import 'swiper/css/swiper.css'
     import {getHotingMovie,getComingMovie} from '../../api/movie.js'
+    import Loading from '../../components/Loading'
 
+    // 优化：希望在加载电影数据的时候，在数据还没有返回之前，页面出现一个loading的加载小动画。等信息加载回来后，再隐藏该动画
+    // 参考网址：https://www.cnblogs.com/jr1993/p/4622039.html
     export default {
         data() {
             return {
                 currentItem: 'hoting',
                 hotMovies:[],
                 comingMovies:[],
+                movieStatus:false,  // 代表当前的电影信息是否已经从服务器返回的状态
+                Movies:[],  // 因为正在热映和即将上映使用的组件是同一个组件，只是数据源不一样，那么定义同一个模型变量，在用户点击切换的时候，把不同的数据赋值给当前的Movies即可。
                 swiperOptions: {
                     pagination: {
                         el: '.swiper-pagination'
@@ -74,7 +85,10 @@
         },
         created(){
             getHotingMovie().then(response=>{
+                this.movieStatus=false;
                 console.log('hoting',response);
+                this.Movies=response.data.data.films;
+                this.movieStatus=true;
             });
         },
         mounted() {
@@ -86,7 +100,8 @@
         components:{
             Nav,
             Swiper,
-            SwiperSlide
+            SwiperSlide,
+            Loading
         },
         directives: {
             swiper: directive
@@ -100,15 +115,19 @@
                     // https://www.juhe.cn
 
                     this.currentItem='hoting';
+                    this.movieStatus=false;
                     getHotingMovie().then(response=>{
                         console.log('hoting',response);
-                        this.hotMovies=response.films;
+                        this.Movies=response.data.data.films;
+                        this.movieStatus=true;
                     });
                 }else if(type=='coming'){
                     this.currentItem='coming';
+                    this.movieStatus=false;
                     getComingMovie().then(response=>{
                         console.log('coming',response);
-                        this.comingMovies=response.films;
+                        this.Movies=response.data.data.films;
+                        this.movieStatus=true;
                     });
                 }
             }
@@ -116,11 +135,11 @@
         filters:{
             // 局部过滤器
             filterActors:function (input) {
+                let rs=[];
                 input.forEach(item=>{
-                    let rs=[];
                     rs.push(item.name);
                 });
-                return rs.join('|').substr(0,7)+'...';
+                return rs.join(' | ').substr(0,7)+'...';
             }
         }
     }
@@ -153,8 +172,14 @@
         }
     }
     .list{
-        padding: 10px;
+        margin-left: 15px;
         .list-item{
+            padding: 15px 15px 15px 0;
+            display: flex;
+            width: 100%;
+            /*flex: 1;*/
+            justify-content: space-around;
+            align-items: center;
             img{
                 width: 66px;
             }
@@ -168,11 +193,6 @@
                 border: 1px solid #ffb232;
                 border-radius: 4px;
             }
-            display: flex;
-            width: 100%;
-            /*flex: 1;*/
-            justify-content: space-around;
-            align-items: center;
         }
     }
 </style>

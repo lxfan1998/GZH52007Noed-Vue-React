@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4c9976c-10ee-41d1-a279-40c6e97e6d56" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/public/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/public/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/public/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/public/css/sina.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/api/movie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/api/news.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/api/request.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/api/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/assets/less/common.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/components/Nav/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/pages/Homes/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/pages/Movies/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/pages/My/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/pages/News/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/pages/NotFound/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node/Week4/04/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/components/Loading/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node/Week4/05/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/api/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/api/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/pages/Movies/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/pages/Movies/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Node/Week4/02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week4/02/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/Week4/03/async-await-try-catch/03-vue-error.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Node/Week4/03/async-await-try-catch/03-vue-error.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,31 +27,31 @@
         <entry file="file://$PROJECT_DIR$/Node/Week4/02/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="248">
-                <caret line="136" column="71" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="71" />
+              <first_editor relative-caret-position="316">
+                <caret line="143" column="50" selection-start-line="143" selection-start-column="50" selection-end-line="143" selection-end-column="50" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/router/index.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/components/Loading/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/pages/Movies/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1292">
-              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+            <state relative-caret-position="92">
+              <caret line="170" column="44" lean-forward="true" selection-start-line="170" selection-start-column="37" selection-end-line="170" selection-end-column="44" />
+              <folding>
+                <element signature="e#1699#1747#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,8 +65,8 @@
         <option value="TypeScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -95,6 +82,7 @@
       <find>store</find>
       <find>--dir</find>
       <find>movie</find>
+      <find>$swipe</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -103,8 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Node/Week1/03/03-pj/backend/views/movie/add.html" />
-        <option value="$PROJECT_DIR$/Node/Week3/05/01-ts-class/07-decorator.js" />
         <option value="$PROJECT_DIR$/Node/Week3/05/01-ts-class/07-decorator.ts" />
         <option value="$PROJECT_DIR$/Node/Week3/05/README.md" />
         <option value="$PROJECT_DIR$/Node/Week3/05/面试题.html" />
@@ -146,14 +132,16 @@
         <option value="$PROJECT_DIR$/Node/Week4/04/README.md" />
         <option value="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/pages/News/index.vue" />
         <option value="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/pages/Homes/index.vue" />
-        <option value="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/components/Nav/index.vue" />
         <option value="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/pages/My/index.vue" />
-        <option value="$PROJECT_DIR$/Node/Week4/02/README.md" />
         <option value="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/api/user.js" />
         <option value="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/api/news.js" />
         <option value="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/api/movie.js" />
         <option value="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/api/request.js" />
+        <option value="$PROJECT_DIR$/Node/Week4/05/README.md" />
+        <option value="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/components/Nav/index.vue" />
+        <option value="$PROJECT_DIR$/Node/Week4/02/README.md" />
         <option value="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/pages/Movies/index.vue" />
+        <option value="$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/components/Loading/index.vue" />
       </list>
     </option>
   </component>
@@ -164,9 +152,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="648" />
+    <option name="x" value="667" />
     <option name="y" value="11" />
-    <option name="width" value="722" />
+    <option name="width" value="703" />
     <option name="height" value="691" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -175,7 +163,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,34 +213,20 @@
               <item name="02" type="462c0819:PsiDirectoryNode" />
               <item name="03-maizuo-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GZH52007Noed-Vue-React" type="b2602c69:ProjectViewProjectNode" />
               <item name="GZH52007Noed-Vue-React" type="462c0819:PsiDirectoryNode" />
               <item name="Node" type="462c0819:PsiDirectoryNode" />
               <item name="Week4" type="462c0819:PsiDirectoryNode" />
-              <item name="02" type="462c0819:PsiDirectoryNode" />
-              <item name="03-maizuo-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Homes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GZH52007Noed-Vue-React" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GZH52007Noed-Vue-React" type="462c0819:PsiDirectoryNode" />
-              <item name="Node" type="462c0819:PsiDirectoryNode" />
-              <item name="Week4" type="462c0819:PsiDirectoryNode" />
-              <item name="02" type="462c0819:PsiDirectoryNode" />
-              <item name="03-maizuo-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Movies" type="462c0819:PsiDirectoryNode" />
+              <item name="05" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,11 +310,12 @@
       <workItem from="1606870457528" duration="7707000" />
       <workItem from="1606888733108" duration="15182000" />
       <workItem from="1606956726804" duration="28454000" />
+      <workItem from="1607043145805" duration="10702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="283934000" />
+    <option name="totallyTimeSpent" value="294636000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -353,9 +327,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="648" y="11" width="722" height="691" extended-state="0" />
+    <frame x="667" y="11" width="703" height="691" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5233918" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.52030075" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -389,17 +364,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01/backend/models/movieModel.js" />
-    <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/controllers/movieController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="57" column="46" lean-forward="true" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Node/Week1/04/01-pj/backend/db/mysql.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -455,26 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="18" selection-end-line="34" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week4/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="153">
-            <caret line="9" column="24" lean-forward="true" selection-end-line="9" selection-end-column="25" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week4/01/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="346">
-            <caret line="28" column="175" lean-forward="true" selection-start-line="28" selection-start-column="175" selection-end-line="28" selection-end-column="175" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -681,23 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week4/02/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="248">
-            <caret line="136" column="71" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="71" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/components/Nav/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/pages/Homes/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -705,17 +632,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/api/request.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/api/movie.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/api/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week4/05/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="401">
+            <caret line="59" column="89" selection-start-line="59" selection-start-column="89" selection-end-line="59" selection-end-column="89" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/components/Nav/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week4/01/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="724">
+            <caret line="28" column="175" selection-start-line="28" selection-start-column="175" selection-end-line="28" selection-end-column="175" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week4/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="24" lean-forward="true" selection-end-line="9" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -729,10 +693,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week4/02/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="316">
+            <caret line="143" column="50" selection-start-line="143" selection-start-column="50" selection-end-line="143" selection-end-column="50" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/pages/Movies/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1292">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        <state relative-caret-position="92">
+          <caret line="170" column="44" lean-forward="true" selection-start-line="170" selection-start-column="37" selection-end-line="170" selection-end-column="44" />
+          <folding>
+            <element signature="e#1699#1747#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node/Week4/02/03-maizuo-app/src/components/Loading/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
         </state>
       </provider>
     </entry>
