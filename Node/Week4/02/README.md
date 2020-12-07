@@ -143,6 +143,13 @@ vue-awesome-swiper网址：https://github.com/surmon-china/vue-awesome-swiper
 ### loading小动画
 参考网址：https://www.cnblogs.com/jr1993/p/4622039.html
 
+### better-scroll
+> better-scroll 是一款重点解决移动端（已支持 PC）各种滚动场景需求的插件。它的核心是借鉴的 iscroll 的实现，它的 API 设计基本兼容 iscroll，在 iscroll 的基础上又扩展了一些 feature 以及做了一些性能优化。
+
+文档网址：https://www.bookstack.cn/read/better-scroll/0.md
+
+在vue中使用better-scroll：https://www.cnblogs.com/mhtss/p/11245132.html
+
 ## 1. 首页
 1. 轮播图（基于vue-swiper插件）
 2. 选项卡（vuejs内置component组件，动态组件）
