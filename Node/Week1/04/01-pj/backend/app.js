@@ -3,14 +3,21 @@ const express = require('express');
 const path=require('path');
 const bodyParser = require('body-parser');
 const cookieSession = require('cookie-session');
+const cors=require('cors');
 
 
 const movieRouter=require('./router/movie.js');
 const backRouter=require('./router/back.js');
 const indexRouter=require('./router/index.js');
 
+// 注册接口路由
+const movieApiRouter=require('./router/api/movie.js');
+
 const app = express();
 const port = 3000;
+
+// 设置跨域操作
+app.use(cors());
 
 // 配置session
 app.use(cookieSession({
@@ -51,6 +58,8 @@ app.use('/admin',movieRouter);
 app.use('/admin',backRouter);
 // /admin/dashboard
 app.use('/admin',indexRouter);
+// 注册接口路由，一般会加上前缀
+app.use('/api/v1',movieApiRouter);
 
 // 完成登录的操作 1. 定义login路由
 

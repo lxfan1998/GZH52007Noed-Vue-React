@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const md5=require('md5');
 
 require('../db/mgdb.js');
 
@@ -25,8 +26,8 @@ class UserModel {
                     if(!data){
                         resolve({status: false,mag:'failure not found',data:null});
                     }else{
-                        // 用户名存在，但是不能说明密码正确
-                        if(data.password===password){
+                        // 用户名存在，但是不能说明密码正确，密码用的是密文比较
+                        if(data.password===md5(password)){
                             // 密码正确，比对得上
                             resolve({status: true,msg:'success',data:data});
                         }else{
