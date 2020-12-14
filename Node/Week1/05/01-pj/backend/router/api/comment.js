@@ -1,32 +1,87 @@
-var express=require('express');
+var express = require('express');
 var jwt=require('jsonwebtoken');
-var moment=require('moment');
+const moment=require('moment');
 
-
-var router=express.Router();
-const MemberModels=require('../../models/memberModel');
+var router = express.Router();
+const CommentModels=require('../../models/commentModel.js');
 const SiteConfig=require('../../config/site.js');
 
-router.get('/comment/register',(req,res)=>{
-    
+// 获取的接口
+router.get('/comment/list',(req,res)=>{
+
 });
 
-router.post('/comment/add',(req,res)=>{
-    // 1.收集数据
-    // 什么人在什么时间对什么进行评论
+// 提交的接口
+router.post('/comment/add',async (req,res)=>{
+    // 1. 收集数据
+    // 什么人在什么事件对什么进行了评论
     let {token,movieId,content}=req.body;
-    let addTime=;
-    // 校验token的合法性
-    try{
-        var userInfo=jwt.verify(token,SiteConfig.JWT_SALT);
-        let addTime=moment().format('YYYY-MM-DD HH:mm:ss');
-        // 入库
-        let commentObj=new CommentModel();
-        try{
-            let info=await comment
-        }
-    }catch(e){
-        
+
+    if(!movieId || !content){
+        let returnData={
+            error_code:1001,
+            reason:'评论信息不完整！',
+            result:{
+                data:null
+            }
+        };
+        res.json(returnData);
+        return;
     }
 
+    // 2. 验证
+    // token是否存在
+    if(!token){
+        let returnData={
+            error_code:1007,
+            reason:'token不存在！',
+            result:{
+                data:null
+            }
+        };
+        res.json(returnData);
+        return;
+    }
+    // 验证token的合法性
+    try {
+        var userInfo = jwt.verify(token, SiteConfig.JWT_SALT);
+        let userId=userInfo._id;
+        let addTime=moment().format('YYYY-MM-DD HH:mm:ss');
+        // 入库
+        let commnetObj=new CommentModels();
+        try {
+            let info=await commnetObj.addComment(userId,movieId,addTime,content);
+            let returnData={
+                error_code:0,
+                reason:'评论成功',
+                result:{
+                    data:info
+                }
+            };
+            res.json(returnData);
+            return;
+        }catch (e) {
+            let returnData={
+                error_code:1008,
+                reason:e.message,
+                result:{
+                    data:null
+                }
+            };
+            res.json(returnData);
+            return;
+        }
+    }catch (e) {
+        let returnData={
+            error_code:1009,
+            reason:e.message,
+            result:{
+                data:null
+            }
+        };
+        res.json(returnData);
+        return;
+    }
 });
+
+module.exports = router;

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+
+    <%@ attribute name="allowClear" type="java.lang.Boolean" required="false" description="是否允许清除"%>
+
+    <c:if test="${empty draggable}">
+        <c:set  var="draggable" value="false" />
+    </c:if>
+    <c:if test="${empty singleSelect}">
+        <c:set  var="singleSelect" value="false" />
+    </c:if>
+
+
+    <div className="input-append">
+        <input id="${id}params" name="${id}params" type="hidden" value="${params}"/>
+        <input id="${id}singleSelect" name="${id}singleSelect" type="hidden" value="${singleSelect}"/>
+        <input id="${id}rowData" name="${id}rowData" type="hidden"/>
+        <input id="${id}url" name="${id}url" type="hidden" value="${includeUrl}"/>
+        <input id="${id}create_url" name="${id}create_url" type="hidden" value="${createUrl}"/>
+        <input id="${id}Id" name="${name}" className="${cssClass}" type="hidden" value="${value}"/>
+        <input id="${id}Name" name="${labelName}" ${allowInput ? '' : 'readonly="readonly"'} type="text"
+               value="${labelValue}" data-msg-required="${dataMsgRequired}" className="${cssClass}"
+               style="${cssStyle}"/>
+
+        <a id="${id}Button" href=" " className="btn ${disabled} ${hideBtn ? 'hide' : ''}" style="${smallBtn?'padding:4px 2px;':''}">
+            <i className="icon-search"></i>
+        </a>
+    </div>
+
+<script type="text/javascript">
+    $("#${id}Button, #${id}Name").click(function(){
+
+        //点击之后触发函数，可以预先初始化 父页面或者子页面
+        ${beforeJs}
+
+        // 是否限制选择，如果限制，设置为disabled
+        if ($("#${id}Button").hasClass("disabled")){
+            return true;
+        }
+
+        var includeUrl =$("#${id}url").val();
+        var createUrl =$("#${id}create_url").val();
+        var params =$("#${id}params").val();
+        var singleSelect = $("#${id}singleSelect").val();
+        // 正常打开
+        top.$.jBox.open("iframe:${ctx}/tag/dialogTableSelect?includeUrl="+encodeURIComponent(includeUrl)+"&params="+encodeURIComponent(params)+"&singleSelect="+singleSelect+"&tableSelectId=${tableSelectId}&tableSelectName=${tableSelectName}", "选择${title}", ${width}, ${height}, {
+            top:"0%",
+            persistent : true,
+            draggable:${draggable},
+            ajaxData:{selectIds: $("#${id}Id").val()},
+            buttons:{
+                ${createBtn}"确定":"ok",
+                ${allowClear?"\"清除\":\"clear\", ":""}"关闭":true,
+                ${allowCreate?"\"新增\":\"create\", ":""}
+            },
+            submit:function(v, h, f){
+                if (v=="ok") {
+
+                    var ids = [], names = [];
+
+                    var select_ids = h.find("iframe").contents().find(".select-id");
+                    var select_names = h.find("iframe").contents().find(".select-name");
+
+
+                    if (select_ids.length == 0) {
+                        top.$.jBox.tip("请选择${title}。");
+                        return false;
+                    }
+
+                    $.each(select_ids, function (index, domEle) {
+                        ids.push($(domEle).val());
+                    });
+
+                    $.each(select_names, function (index, domEle) {
+                        names.push($(domEle).val());
+                    });
+
+
+                    $("#${id}Id").val(ids.join(",").replace(/u_/ig, ""));
+                    $("#${id}Name").val(names.join(","));
+                    //只支持单选
+                    var singleSelect = '${singleSelect}';
+                    if (singleSelect == "true") {
+                        var row_data = h.find("iframe").contents().find(".select-row-data").val();
+                        var row_data_String = JSON.stringify(row_data);
+
+                        row_data_String = row_data_String.replace(/\\/g, '');//去掉“\”
+                        row_data_String = row_data_String.substr(1);//去掉第一个"
+                        row_data_String = row_data_String.substr(0, row_data_String.length - 1);//去掉最后一个"
+                        //alert(row_data_String);
+                        //alert(row_data_String.replace(/\\/g,''));//去掉“\”
+                        $("#${id}rowData").val(row_data_String);
+                        ${completeJs}
+                    }
+                }
+                else if (v=="clear"){
+                        $("#${id}Id").val("");
+                        $("#${id}Name").val("");
+                        $("#${id}rowData").val("");
+                        return false;
+                }
+                else if (v=="create"){
+                    var searchBtn = h.find("iframe").contents().find(".search-btn");
+                    customCreateWindow(createUrl,'新建',1000,600,'10px',false,searchBtn);
+                    // 刷新列表
+                    return false;
+                }
+            },
+            loaded:function(h){
+                $(".jbox-content", top.document).css("overflow-y","hidden");
+            }
+        });
+    });
+
+    function customCreateWindow(url, title, width, height, topValue,isclose,searchBtn) {
+        url = "iframe:" + "${ctx}/" + url;
+        <%--url = "iframe:${ctx}/tag/dialogTableSelect?includeUrl="+url;--%>
+        console.log(url);
+        topValue = (topValue == '' ? '10%' : '10px');
+        top.$.jBox.open(url, title, width, height,
+         {
+            persistent : false,
+            top : topValue,
+            buttons : {
+               '保存' : "ok",
+               '返回' : true
+            },
+            draggable:${draggable},
+            submit : function(v, h, f) {
+                  /*  点击窗口按钮后的回调函数，返回true时表示关闭窗口，参数有三个，
+                         v表示所点的按钮的返回值，
+                         h表示窗口内容的jQuery对象，
+                         f表示窗口内容里的form表单键值
+                         */
+                  if (v==="ok"){
+                     var form=h.find("iframe").contents().find("#inputForm");
+
+                     form.find("#btnSubmit").click();
+
+                     if(form.find("input[name=validform]").val()==="false"){
+                        return false;
+                     }else{
+                        form.submit();
+                     }
+                     top.$.jBox.tip(title+"成功","success");
+                     return true;
+                  }
+            },
+            closed : function() {
+                setTimeout(function() {
+                     searchBtn.click();
+                }, 200);
+            }
+        });
+   }
+
+
+   // h表示窗口内容的jQuery对象
+   // 先找h中的iframe，然后获得匹配元素集合中每个元素的子节点，再找.hasselect，设置内容为空字符串
+   // h.find("iframe").contents().find(".hasselect").html("");
+
+   // 先找h中的iframe，然后获得匹配元素集合中每个元素的子节点，再找#table、tbody、tr、td、input，用prop()方法设置属性checked和属性值false
+   // h.find("iframe").contents().find("#table tbody tr td input").prop("checked", false);
+
+</script>
+</html>

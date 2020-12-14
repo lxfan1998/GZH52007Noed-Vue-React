@@ -8,7 +8,16 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="jQuery" level="project" />
+    <orderEntry type="library" name="@types/java" level="application" />
+    <orderEntry type="library" name="@types/axios-cancel" level="application" />
     <orderEntry type="library" name="@types/jquery" level="application" />
+    <orderEntry type="library" name="@types/mongoose" level="application" />
+    <orderEntry type="library" name="@types/html" level="application" />
+    <orderEntry type="library" name="@types/node" level="application" />
+    <orderEntry type="library" name="@types/java-applet" level="application" />
+    <orderEntry type="library" name="@types/javascript-astar" level="application" />
+    <orderEntry type="library" name="@types/javascript-state-machine" level="application" />
+    <orderEntry type="library" name="@types/vue2-editor" level="application" />
+    <orderEntry type="library" name="@types/react" level="application" />
   </component>
 </module>

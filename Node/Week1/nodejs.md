@@ -427,9 +427,6 @@ http://localhost:9000/index.html
 + 编程语言：php+Java+nodejs
 + 针对用户群体：公司内部员工
 
-# （Week1Day3下午）
-实例
-
 
 # （Week1Day4上午）
 
@@ -438,16 +435,52 @@ http://localhost:9000/index.html
 2. MVC简介
 3. 接口编写
 
+# MVC思想简介
+
+## MVC架构：
++ M：model，模型，负责对数据库的操作。
++ V：view，视图，负责数据的展示和收集。
++ C：controller，控制器，完成业务逻辑。
+
++ app.js：启动文件，单一入口。
+
+整套架构：MVC+单一入口
+
+
+思考：电影模块的curd操作。
+需求：完成网站会员的curd操作。
+做法：增加memberController.js、movieModel.js和member文件夹（有add.html和list.html）。
+
+需求：新闻模块的curd操作。
+
+都是为了方便后期的团队协作。
+
+无状态协议。
+
 # （Week1Day4下午）
 
-# 项目初始化
+# md5
+md5在线加密网址：https://md5jiami.51240.com/
+
+md5在线解密：https://cmd5.com/
+
++ 严格意义上来说md5不算加密（一般来说有加密就要有解密），准确来讲，md5叫做获取信息的摘要值（hash值、指纹信息）。
++ 具有单向不可逆性，没办法从密文推算出明文，但是能够暴力破解（一个个比对，用电脑处理非常快）。
++ 只能由明文变成密文，对于相同的明文生成的密文一致。
++ md5可以用来做校验。有一些信息我们并不是需要它保密，而是需要它可信。
+
+密码破解的利器：密码本/彩虹表（rainbow table）
+
+## 前后台分离
+
+后台：提供数据，一般以接口（url地址+json格式的数据）方式提供数据。
+
+前台：调用数据，发网络请求（ajax实现），但是前、后台端口不同，这是跨域请求。因为浏览同源策略的限制使得跨域请求不能成立，所以需要解决跨域的问题（方法：1. jsonp 2. 同域代理 3. cors）。
+
+聚合网免费数据：http://v.juhe.cn/toutiao/index?type=&key=d0c418c9d5324a8ddf197e85c3dc9c5a
 
 
-
-
-# 
-
-（Week1Day5上午）
+# Week1Day5上午
 
 # 课程目标
 1.电影网站完善
@@ -478,7 +511,7 @@ b/s
 使用该工具我们有在编写代码的时候，为代码增加注释，然后基于该注释可以
 运行apidoc之前得先有一个配置文件
 
-（Week1day5）
+# Week1day5下午
 
 # websocket简介
 webdocker

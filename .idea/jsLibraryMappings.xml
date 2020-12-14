@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{@types/jquery, jQuery}" />
+    <file url="PROJECT" libraries="{@types/axios-cancel, @types/html, @types/java, @types/java-applet, @types/javascript-astar, @types/javascript-state-machine, @types/jquery, @types/mongoose, @types/node, @types/react, @types/vue2-editor}" />
+    <includedPredefinedLibrary name="HTTP Response Handler" />
   </component>
 </project>
