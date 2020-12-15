@@ -11,6 +11,18 @@ class CommentModel {
 
     }
 
+    list(movieId){
+        return new Promise((resolve,reject)=>{
+            CommentsModel.find({movieId}).exec((error,data)=>{
+                if(error){
+                    reject(error);
+                }else {
+                    resolve(data);
+                }
+            });
+        });
+    }
+
     addComment(userId,movieId,addTime,content){
         let commentObj=new CommentsModel({userId,movieId,addTime,content});
         return commentObj.save();

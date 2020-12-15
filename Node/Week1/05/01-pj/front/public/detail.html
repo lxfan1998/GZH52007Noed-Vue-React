@@ -152,7 +152,7 @@
 						<div class="form-group">
 							<textarea name="content" class="form-control" id="content" cols="30" rows="10"></textarea>
 						</div>
-						<button type="submit" class="btn btn-success btn-lg btn-block">提交评论</button>
+						<button id="commentBtn" type="button" class="btn btn-success btn-lg btn-block">提交评论</button>
 					</form>
 				</div>
 			</div>
@@ -236,7 +236,67 @@
 	$("#fav").click(function(){
 		swal ( "标题" ,  "恭喜你，收藏成功!" ,  "success" )
 	});
-	
+
+	let movieId=location.href.split('?')[1].split('=')[1];
+
+	$("#commentBtn").click(function () {
+		// 获取评论内容，调用接口
+		var content=$("#content").val();
+		if(!content){
+			alert("请输入内容");
+			return;
+		}
+
+		let url='http://localhost:3000/api/v1/comment/add';
+		// http://localhost:6060/detail.html?movieId=5fbfb4ca84cb3131d0a1d80f
+		let token=localStorage.getItem('movieToken');
+		
+		$.ajax({
+			url,
+			type:'post',
+			data:{movieId,token,content},
+			dataType:'json',
+			success:function (json) {
+				if(json.error_code===0){
+					alert('评论成功！');
+					$("#content").val('');
+					// 获取最新的评论
+					getCommentList();
+				}
+				console.log(json);
+			}
+		});
+
+		function getCommentList() {
+			let url='http://localhost:3000/api/v1/comment/list?movieId='+movieId;
+			$.ajax({
+				url,
+				type:'GET',
+				dataType:'json',
+				success:function (json) {
+					console.log(json);
+					if(json.error_code===0){
+						let _html=``;
+						json.result.data.forEach(item=>{
+							_html+=`<div class="media">
+										<a href="#" class="pull-left"><img src="./public/imgs/avatar.jpg" class="media-object" alt=""></a>
+										<div class="media-body">
+											<h4 class="media-heading">${item.userId}</h4>
+											<p>${item.addTime}</p>
+									   		<p>${item.content}</p>
+										</div>
+									</div>`;
+						});
+						$(".discuzs").html(_html);
+					}else{
+						alert('获取失败！');
+						return;
+					}
+				}
+			});
+		}
+		getCommentList();
+	});
 	</script>
 </body>
 </html>

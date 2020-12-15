@@ -7,8 +7,47 @@ const CommentModels=require('../../models/commentModel.js');
 const SiteConfig=require('../../config/site.js');
 
 // 获取的接口
-router.get('/comment/list',(req,res)=>{
-
+// get传参是在url里（比如index.html?movieId=122321t&type=5）
+router.get('/comment/list',async (req,res)=>{
+    // 获取某一部电影的评论
+    // 如何完成分页功能？
+    // http://localhost:3000/api/v1/comment/list?movieId=5fbfb4ca84cb3131d0a1d80f&page=1&size=5
+    let {movieId}=req.query;
+    if(!movieId){
+        let returnData={
+            error_code:1001,
+            reason:'电影id不存在！',
+            result:{
+                data:null
+            }
+        };
+        res.json(returnData);
+        return;
+    }
+    try {
+        // 获取电影列表数据
+        let commentObj=new CommentModels();
+        let commentList=await commentObj.list(movieId);
+        let returnData={
+            error_code:0,
+            reason:'获取成功！',
+            result:{
+                data:commentList
+            }
+        };
+        res.json(returnData);
+        return;
+    }catch (e) {
+        let returnData={
+            error_code:1010,
+            reason:e.message,
+            result:{
+                data:null
+            }
+        };
+        res.json(returnData);
+        return;
+    }
 });
 
 // 提交的接口

@@ -338,7 +338,7 @@ post
 
 评论成功
 
-```
+```json
 {
     "error_code": 0,
     "reason": "评论成功",
@@ -359,7 +359,7 @@ post
 
 1、信息不完整
 
-```
+```json
 {
     "error_code": 1001,
     "reason": "评论信息不完整！",
@@ -371,7 +371,7 @@ post
 
 2、token不存在
 
-```
+```json
 {
     "error_code": 1007,
     "reason": "token不存在！",
@@ -383,7 +383,7 @@ post
 
 3、token不合法
 
-```
+```json
 {
     "error_code": 1009,
     "reason": "jwt malformed",
@@ -394,6 +394,87 @@ post
 ```
 
 
+
+### 评论获取接口
+
+#### 请求url地址
+
+```
+/comment/list
+```
+
+
+
+#### 请求方式
+
+```
+get
+```
+
+
+
+#### 请求参数
+
+| 序号 | 字段    | 描述   |
+| ---- | ------- | ------ |
+| 1    | movieId | 电影id |
+
+
+
+#### 示例
+
+成功
+
+```json
+{
+    "error_code": 0,
+    "reason": "获取成功！",
+    "result": {
+        "data": [
+            {
+                "_id": "5fd76847230d4b3210ea1932",
+                "userId": "5fd1e893178df027d4102f85",
+                "movieId": "5fbfb4ca84cb3131d0a1d80f",
+                "addTime": "2020-12-14 21:27:35",
+                "content": "一部好电影",
+                "__v": 0
+            },
+            {
+                "_id": "5fd76a26230d4b3210ea1933",
+                "userId": "5fd1e893178df027d4102f85",
+                "movieId": "5fbfb4ca84cb3131d0a1d80f",
+                "addTime": "2020-12-14 21:35:34",
+                "content": "一部好电影",
+                "__v": 0
+            },
+            {
+                "_id": "5fd76b4f230d4b3210ea1934",
+                "userId": "5fd1e893178df027d4102f85",
+                "movieId": "5fbfb4ca84cb3131d0a1d80f",
+                "addTime": "2020-12-14 21:40:31",
+                "content": "一部好电影",
+                "__v": 0
+            }
+        ]
+    }
+}
+```
+
+
+
+失败
+
+1、模型没有实例化
+
+```json
+{
+    "error_code": 1010,
+    "reason": "CommentModel.find is not a function",
+    "result": {
+        "data": null
+    }
+}
+```
 
 
 
