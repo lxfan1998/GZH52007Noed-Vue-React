@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>输入用户名</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <div class="i-body">
+    <h1>请输入你的昵称：</h1>
+    <form id="chatForm">
+      <input type="text" id="nickname">
+    </form>
+  </div>
+</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script>
+  // 1. 用户输入用户名
+  // 两个页面之间共享数据信息 nickname 用localStorage实现 localStorage.name
+  // 2. 前往聊天室 在提交要跳转的时候把nickname传过去也行 room.hmtl?nickname=''
+  $('#chatForm').submit(function (event) {
+
+    event.preventDefault();  // 组织表单默认的提交
+
+    let nickname=$('#nickname').val();
+    if(!nickname){
+      alert('请输入用户昵称');
+      return;
+    }
+    localStorage.setItem('chatNickname',nickname);
+
+    location.href='/room.html';
+  });
+</script>

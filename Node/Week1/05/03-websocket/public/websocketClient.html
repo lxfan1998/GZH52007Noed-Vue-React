@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>websocket客户端</h1>
+    <hr>
+    <button id="websocketBtn">点击连接websocket服务器端</button>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script>
+    $("#websocketBtn").click(function () {
+       let websocketUrl='http://localhost:9300';
+       // 连接websocket服务器
+        // 浏览器自带一个Websocket构造函数。Websocket(){[native code]}
+
+        // 可以使用一个第三方的websocket客户端库
+        let socketClient=io(websocketUrl);
+        // socket.io.js提供一个io函数，底层是浏览器的Websocket构造函数的封装。
+        // express是对http的封装
+        // $.ajax是对XMLHttpRequest封装
+        socketClient.on('connect',function () {
+            // connect事件，代表一旦客户端和服务端成功建立连接，回调函数触发
+            console.log('connect server success!');
+        });
+        // 基于该客户端对象可以和websocket服务器进行交互，实现两端通信。
+        // 1. 客户端可以给服务器发送信息
+        // 参数1：代表事件的名称，需要事件在服务器端进行监听，名称由用户自定义。
+        // 参数2：代表要传递的信息，用户自定义。
+        socketClient.emit('sendMsg','hi websocket!');
+        // 2. 服务器端可以主动推送信息给客户端
+        socketClient.on('sendMsgToClient',function (data) {
+            console.log('data from server',data);
+        });
+    });
+</script>
+</html>

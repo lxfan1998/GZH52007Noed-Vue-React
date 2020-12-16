@@ -77,4 +77,63 @@ websocket是一门可以实现客户端和服务器建立连接后，进行相�
 
 借助一个第三方的库：socket.io
 
+注意版本不同可能会导致不兼容，一般都是版本太高了，删除高版本重新安装低版本的就好了。
+
 # 构建websocket客户端
+
+
+```shell
+    // 构建一个websocket服务器
+    var express = require('express');
+    var app=express();
+    
+    // 设置一个静态资源服务器
+    app.use(express.static('public'));
+    
+    // 构建了一个http web服务器
+    var http = require('http').createServer(app);
+    
+    // 构建了一个web socket服务器，提供网页服务
+    var io = require('socket.io')(http);
+    
+    // 使用web服务功能
+    // http://localhost:9300/
+    app.get('/', (req, res) => {
+      res.send('websocket ok!');
+    });
+    
+    // websocket服务器，提供websocket连接服务
+    io.on('connection', (socket) => {
+        // 参数socket代表当前的连接对象
+        // 一旦有客户端连接服务器端，connection回调函数就执行
+        //socket.on('sendMsg')一旦监听，如果客户端有通过emit触发该事件，回调函数执行。参数data代表客户端传递的数据。
+        socket.on('sendMsg',function (data) {
+            console.log('data from client'+ socket.id,data);
+        });
+        // 服务器端主动给客户端推送信息
+        setInterval(function () {
+            socket.emit('sendMsgToClient',(new Date()) + ':' + Math.random());
+        },1000);
+    
+      console.log('a user connected');
+    });
+    
+    // http服务器监听9300端口
+    http.listen(9300, () => {
+      console.log('listening on *:9300');
+    });
+```
+
+# websocket聊天室
+
+02-websocket-chat
+
+# Layui
+官方文档：https://www.layui.com/doc/
+
+示例-->内置模块-->即时通讯
+
+## LayIM即时通讯
+网址：https://www.layui.com/demo/layim.html
+
+注意：LayIM 是基于 layui 的一款独立的付费组件，它是网页即时通讯 UI 解决方案，您购买授权后得到的是一套前端源代码，而服务端程序需自写。

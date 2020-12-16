@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>迷你聊天室</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <header class="c-header">
+    <h1>迷你聊天室</h1>
+    <div class="c-user"><img src="./imgs/1.jpg" title=""></div>
+  </header>
+  <div class="c-body">
+    <div class="c-main">
+      <ul class="c-list">
+
+          <li class="c-item">
+          <img class="c-avatar" src="./imgs/2.jpg" title=""> 
+          <div class="c-box">
+            <div class="c-info">
+              <div class="c-name">andy 2019-10-11 12:23:44</div>
+            </div>
+            <div class="c-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, assumenda.</div>
+          </div>
+        </li>
+        
+        <li class="c-item my-item">
+         
+          <div class="c-box">
+            
+            <div class="c-content">sdf </div>
+          </div>
+          <div><img class="c-avatar my-avatar" src="./imgs/6.jpg" title=""> <span class="my-info">andy <span>2019-08-22 07:20:56</span> </span></div>
+
+        </li>
+
+        <li class="c-item my-item">
+         
+          <div class="c-box">
+            
+            <div class="c-content">sdf </div>
+          </div>
+          <div><img class="c-avatar my-avatar" src="./imgs/6.jpg" title=""> <span class="my-info">andy <span>2019-08-22 07:20:56</span> </span></div>
+
+        </li>
+        
+
+        <li class="c-item">
+          <img class="c-avatar" src="./imgs/3.jpg" title=""> 
+          <div class="c-box">
+            <div class="c-info">
+              <div class="c-name">马明 2019-10-11 12:23:44</div>
+            </div>
+            <div class="c-content">Lorem ipsum dolor sit amet, consectetur.</div>
+          </div>
+        </li>
+
+         <li class="c-item">
+          <img class="c-avatar" src="./imgs/4.jpg" title=""> 
+          <div class="c-box">
+            <div class="c-info">
+              <div class="c-name">ruby  2019-10-11 12:24:44</div>
+            </div>
+            <div class="c-content">Lorem ipsum dolor sit amet.</div>
+          </div>
+        </li>
+
+         <li class="c-item">
+          <img class="c-avatar" src="./imgs/5.jpg" title="">
+          <div class="c-box">
+            <div class="c-info">
+              <div class="c-name">李杰  2019-10-11 12:24:54</div>
+            </div>
+            <div class="c-content">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+          </div>
+        </li>
+
+
+        <!--<li class="c-item">-->
+          <!--<div class="c-join-info">【骑着笨鸟飞】加入聊天室</div>-->
+        <!--</li>-->
+
+      </ul>
+
+      <div class="c-xxx"></div>
+      <div class="c-chat">
+        <img class="c-avatar2" src="./imgs/1.jpg" alt="">
+        <input class="c-input" type="text" id="content">
+        <button class="c-btn" id="sendBtn">发送</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script>
+
+  (function () {
+    let nickName=localStorage.getItem('chatNickname');
+    if(!nickName){
+      alert('请输入昵称');
+      location.href='/index.html';
+      return;
+    }
+
+    // 连接websocket服务器进行聊天
+    let websocketUrl='http://localhost:9300';
+    let socketClient=io(websocketUrl);
+    socketClient.on('connect',function () {
+      console.log('connect server success!');
+    });
+
+    // 1. 新人加入聊天室
+    socketClient.emit('joinUs',{nickName});
+
+    // 2. 接收服务器的广播信息
+    socketClient.on('sbJoinUs',function (data) {
+      console.log('sbJoinUs',data);
+      let _html=`<li class="c-item">
+                    <div class="c-join-info">【${data.nickName}】加入聊天室</div>
+                </li>`;
+      $(".c-list").append(_html);
+    });
+
+    // 3. 聊天信息发送
+    $("#sendBtn").click(function () {
+      let content=$("#content").val();
+      if(!content){
+        alert('请输入聊天信息');
+        return;
+      }
+      // 通过websocket做中转
+      socketClient.emit('sendChat',{nickName,content});
+      $("#content").val();
+    });
+
+    // 4. 客户端监听广播聊天信息
+    socketClient.on('getChat',function (data) {
+      console.log('data',data);
+      // 聊天内容DOM操作放置在页面
+      let _html=``;
+      // 如果是自己的话，则添加my-item，存在一个底纹
+      if(data.nickName===nickName){
+        _html=`<li class="c-item my-item">
+                    <div class="c-box">
+                        <div class="c-content">${data.content}</div>
+                    </div>
+                    <div><img class="c-avatar my-avatar" src="./imgs/6.jpg" title=""> <span class="my-info">${data.nickName}<span>${data.time}</span> </span></div>
+
+        </li>`;
+      }else {
+        _html=`<li class="c-item">
+                    <img class="c-avatar" src="./imgs/5.jpg" title="">
+                    <div class="c-box">
+                        <div class="c-info">
+                            <div class="c-name">${data.nickName}  ${data.time}</div>
+                        </div>
+                        <div class="c-content">${data.content}</div>
+                    </div>
+                </li>`;
+      }
+      $(".c-list").append(_html);
+    });
+  })();
+</script>

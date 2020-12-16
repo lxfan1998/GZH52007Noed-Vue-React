@@ -1,6 +1,8 @@
 
 # Week6Day1
 
+# Nginx
+
 # 课程目标
 1. flux简介
 2. redux入门使用
