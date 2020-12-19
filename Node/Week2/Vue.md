@@ -1,11 +1,12 @@
+
+# Week2Day1上午
+
 # 课程目标
 1.前端开发规范简介
 2.vuejs简介
 3.vuejs初体验
 4.掌握MVVM开发思想
 5.掌握vuejs的常见指令
-
-（Week2Day1上午）
 
 # Mac OSX安装MongoDB
 http://www.runboo.com/mongodb/mongdb-osx-install
@@ -269,7 +270,7 @@ JaveScript Standaed Style官网：https://standardjs.com/
 方向一：模型到视图
 方向二：视图到模型
 
-（Week2Day1下午）
+# Week2Day1下午
 
 # vuejs的指令
 v-html
@@ -319,7 +320,7 @@ arr遍历输出 1. 便利的数据 2. 遍历的最小单元
 
 
 
-（Week2Day2上午）
+# Week2Day2上午
 
 # 课程目标
 1. vuejs实现电影网站留言加载功能

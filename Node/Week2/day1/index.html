@@ -10,34 +10,37 @@
         <h2>传统开发</h2>
         <p id="titleContainer">title</p>
     </div>
-    <!-- 2. 定义一个vuejs管理的区域，在该区域我们可以使用vue特有的语法 -->
+    <!-- 2. 定义一个vuejs管理的区域，在该区域我们可以使用vuejs特有的语法 -->
     <div id="app">
-        <!-- 插值表达式 -->
+        <!-- {{}}叫做插值表达式 -->
         <p>{{ title }}</p>
-        <!--  v- 开头的叫做指令 -->
+        <!--  “v-” 开头的叫做指令 -->
         <p v-text="title"></p>
         <input type="text" v-model="title" />
     </div>
 </body>
-<!-- 1. 引入 vue.js -->
 <script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+
+<!-- 1. 引入 vue.js  这几种引入方式都可以 -->
+<!--直接下载并用 <script> 标签引入，Vue 会被注册为一个全局变量。-->
 <!-- <script src="./lib//vue.js"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
-<script src="node_modules/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!--<script src="node_modules/vue/dist/vue.js"></script>-->
 <!-- <script src="./lib//vue.min.js"></script> -->
 <script>
 
     console.log(Vue);
-    // 3.使用Vue构造函数，实例化一个vue对象
+
     let title='hi vuejs';
     let arr=[12,23,34];
     let obj={id:1,name:'andy'};
 
-    // 传统操纵
+    // 传统操作
     $("#titleContainer").html(title);
     // document.getElementById('titleContainer').innerHTML='title';
 
-    // 数据驱动为主，不需要做DOM操作。远离之前那种DOM操作
+    // 3.使用Vue构造函数，实例化一个vue对象
+    // vue是以数据驱动为主的操作，不需要做DOM操作。远离之前那种DOM操作
     new Vue({
         el:'#app',  // el：element选择器
         data:{

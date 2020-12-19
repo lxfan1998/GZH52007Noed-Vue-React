@@ -10,9 +10,11 @@
         <!-- 双大括号{{}}我们叫做 插值表达式 ，可以把vujs模型里面的模型变量的值插入到这个使用 双大括号 的地方 -->
         <p>{{ title }}</p>
         <!-- 使用vuejs之后，不需要再做DOM操作，而是使用vuejs帮我们去做数据操作，vuejs是如何实现数据的驱动的？ 答：vuejs使用一种MVVM的开发思想来完成的，底层使用的是es5里面的一个叫做Object.definedProperty这个api，做模型变量的劫持，拦截其get和set操作，一旦数据发生变化，会把最新的数据更新到页面（使用了订阅发布模式完成） -->
-        <!-- 在vue里面，以v-开头的指令，用来扩充html标签的能力，当作属性使用 -->
-        <!-- v-model 手机页面View的数据 -->
+        <!-- v-model，在vue里面，以“v-”开头的指令，用来扩充html标签的能力，当作标签的属性来使用 -->
+        <!-- v-model 收集页面View的数据 -->
+        <!-- 定义一个容器来装v-model收集到的数据,然后把数据给模型变量 -->
         <input type="text" v-model="username" />
+        <!--把收集到的数据放置在View中-->
         <p>{{ username }}</p>
     </div>
 </body>
@@ -26,7 +28,8 @@
         // 对象的数据我们称之为模型变量
         data:{
             title:'hi vuejs',
-            username:'',        }
+            username:'',
+        }
     })
 
     console.log(vm);
