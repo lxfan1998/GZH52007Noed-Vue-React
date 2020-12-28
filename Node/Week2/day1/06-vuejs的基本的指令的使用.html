@@ -19,6 +19,7 @@
             <input type="radio" value="female" v-model="gender" />女
             <div>
                 <p>兴趣爱好：</p>
+                <!--checkbox单选框-->
                 <input type="checkbox" value="zq" v-model="hobby" />足球
                 <hr>
                 <input type="checkbox" value="lq" v-model="hobby" />篮球
@@ -28,6 +29,7 @@
             </div>
             <div>
                 <p>地区：</p>
+                <!--复选框-->
                 <select v-model="address">
                     <option value="sh">上海</option>
                     <option value="gz">广州</option>
@@ -64,7 +66,7 @@
 
             gender:'male',
 
-            // 有两种方式来初始化：1.初始化为数组[]
+            // 有两种方式来初始化：1.初始化为数组 []
             hobby:[],
 
             address:'gz',

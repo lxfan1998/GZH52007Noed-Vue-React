@@ -288,6 +288,14 @@ Model通过ViewModel的Data Bindings（数据绑定）将数据放到页面上�
 + 方向一：模型到视图
 + 方向二：视图到模型
 
+## 插值表达式{{}}
+数据绑定最常见的形式就是使用“Mustache”语法 (双大括号) 的文本插值。
+
+```shell
+    <span>Message: {{ msg }}</span>
+```
+
+Mustache 标签将会被替代为对应数据对象上 msg property 的值。无论何时，绑定的数据对象上 msg property 发生了改变，插值处的内容都会更新。
 
 # Week2Day1下午
 
@@ -296,27 +304,36 @@ Model通过ViewModel的Data Bindings（数据绑定）将数据放到页面上�
 # vuejs的指令
 > 指令的职责是，当表达式的值改变时，将其产生的连带影响，响应式地作用于 DOM。
 
+官方API：https://cn.vuejs.org/v2/api/#%E6%8C%87%E4%BB%A4
+
 ## v-model
 + v-model收集页面的数据，可以使用在表单控件上面（比如input 、text、radio、checkbox、select、textarea）。
 
-+ v-model的属性值，必须事先在模型变量里面定义好.
++ v-model的属性值，必须事先在模型变量里面定义好，模型变量的初始化操作。
 
-+ v-model修饰器:
-    + trim 去除空格，注意是清除前后两边的空格。浏览器显示空格会默认过滤掉。
-    + number 文本框的值类型会变成number类型。在默认情况下，在输入框中无论我们输入的是字母还是数字，都是会被当做是字符串类型进行处理。
-    + lazy 使模型绑定的数据只有在失去焦点或者是按下回车时才会更新。使用lazy可以使数据不需要多次重写，减少消耗。
+### v-model修饰器:
+1. .trim 去除空格，注意是清除前后两边的空格。浏览器显示空格会默认过滤掉。
+2. .number 文本框的值类型会变成number类型。在默认情况下，在输入框中无论我们输入的是字母还是数字，都是会被当做是字符串类型进行处理。
+3. .lazy 取代input监听change事件。使模型绑定的数据只有在失去焦点或者是按下回车时才会更新。使用lazy可以使数据不需要多次重写，减少消耗。
 
 ## v-text
-更新元素的 textContent。如果要更新部分的 textContent，需要使用 {{ Mustache }} 插值。
++ 更新元素的 textContent。如果要更新部分的 textContent，需要使用 {{ Mustache }} 插值。
+
++ v-text：dom.innerText
+
++ v-text提供一个js语境，在这个语境里面可以编写符合js语法的代码
 
 ## v-html
-更新元素的 innerHTML。注意：内容按普通 HTML 插入，不会作为 Vue 模板进行编译。
++ 更新元素的 innerHTML。注意：内容按普通 HTML 插入，不会作为 Vue 模板进行编译。
 
++ v-html指令：底层dom.innerHTML
 
-vuejs在遇到html标签的时候，会转换成HTML的实体符号，然后再进行输出。为什么要转换为实体符号？
-答：主要是为了网站的安全，
++ vuejs在遇到html标签的时候，会转换成HTML的实体符号，然后再进行输出。为什么要转换为实体符号？（&lt;  &gt;）
+答：主要是为了网站的安全，存在一种叫做xss的攻击。
 
++ 如果确定内容是安全的，就可以用v-html，如果不确定内容是否安全，那么就用插值表达式{{}}。
 
+### 注意：v-html和v-text会覆盖标签里面本身的内容
 
 
 arr遍历输出 1. 便利的数据 2. 遍历的最小单元
